@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym reg3 D:/components/3_Bits_Reg/reg3.sch C:/Users/TF/Desktop/test/reg3.sym 

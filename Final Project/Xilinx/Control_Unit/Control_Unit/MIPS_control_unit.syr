@@ -1,0 +1,668 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: MIPS_control_unit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS_control_unit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS_control_unit"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : MIPS_control_unit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLCompilers:176 - Include directory \Users\TF\Desktop\ does not exist
+Compiling verilog file "C:/Users/TF/Desktop/control_unit.v" in library work
+Module <MIPS_control_unit> compiled
+No errors in compilation
+Analysis of file <"MIPS_control_unit.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MIPS_control_unit> in library <work> with parameters.
+	Address = "00000000000000000000000000000100"
+	B_Execution = "00000000000000000000000000001010"
+	Beq_Done = "00000000000000000000000000001100"
+	Bne_Done = "00000000000000000000000000001011"
+	Decode = "00000000000000000000000000000001"
+	Fetch = "00000000000000000000000000000000"
+	I_Execution = "00000000000000000000000000001110"
+	I_Write = "00000000000000000000000000001111"
+	J_Execution = "00000000000000000000000000001000"
+	Jal_Execution = "00000000000000000000000000001101"
+	Jr_Execution = "00000000000000000000000000001001"
+	LW_Done = "00000000000000000000000000000111"
+	LW_Execution = "00000000000000000000000000000101"
+	Li_Execution = "00000000000000000000000000010001"
+	Lui_Execution = "00000000000000000000000000010000"
+	R_Execution = "00000000000000000000000000000010"
+	R_Write = "00000000000000000000000000000011"
+	SW_Done = "00000000000000000000000000000110"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MIPS_control_unit>.
+	Address = 32'sb00000000000000000000000000000100
+	B_Execution = 32'sb00000000000000000000000000001010
+	Beq_Done = 32'sb00000000000000000000000000001100
+	Bne_Done = 32'sb00000000000000000000000000001011
+	Decode = 32'sb00000000000000000000000000000001
+	Fetch = 32'sb00000000000000000000000000000000
+	I_Execution = 32'sb00000000000000000000000000001110
+	I_Write = 32'sb00000000000000000000000000001111
+	J_Execution = 32'sb00000000000000000000000000001000
+	Jal_Execution = 32'sb00000000000000000000000000001101
+	Jr_Execution = 32'sb00000000000000000000000000001001
+	LW_Done = 32'sb00000000000000000000000000000111
+	LW_Execution = 32'sb00000000000000000000000000000101
+	Li_Execution = 32'sb00000000000000000000000000010001
+	Lui_Execution = 32'sb00000000000000000000000000010000
+	R_Execution = 32'sb00000000000000000000000000000010
+	R_Write = 32'sb00000000000000000000000000000011
+	SW_Done = 32'sb00000000000000000000000000000110
+"C:/Users/TF/Desktop/control_unit.v" line 275: $display : not implemented
+WARNING:Xst:905 - "C:/Users/TF/Desktop/control_unit.v" line 101: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Opcode>
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 284: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 284: $display : The current state is %d
+"C:/Users/TF/Desktop/control_unit.v" line 291: $display : In Fetch, the next_state is 1
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 296: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 296: $display : The opcode is %d
+"C:/Users/TF/Desktop/control_unit.v" line 301: $display : The next state is R_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 306: $display : The next state is R_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 311: $display : The next state is R_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 316: $display : The next state is R_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 321: $display : The next state is R_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 326: $display : The next state is Jr_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 331: $display : The next state is Address
+"C:/Users/TF/Desktop/control_unit.v" line 336: $display : The next state is Jal_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 341: $display : The next state is B_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 346: $display : The next state is B_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 351: $display : The next state is Address
+"C:/Users/TF/Desktop/control_unit.v" line 356: $display : The next state is I_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 361: $display : The next state is I_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 366: $display : The next state is I_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 371: $display : The next state is Lui_Execution
+"C:/Users/TF/Desktop/control_unit.v" line 376: $display : The next state is Li_Execution
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 380: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 380: $display :  Wrong Opcode %d 
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 385: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 385: $display : In Decode, the next_state is %d
+"C:/Users/TF/Desktop/control_unit.v" line 391: $display : In R_Exec, the next_state is 3
+"C:/Users/TF/Desktop/control_unit.v" line 397: $display : In R_Write, the next_state is 0
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 412: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 412: $display : In Address, the next_state is %d
+"C:/Users/TF/Desktop/control_unit.v" line 418: $display : In LW_Execution, the next_state is 7
+"C:/Users/TF/Desktop/control_unit.v" line 424: $display : In SW_Done, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 430: $display : In J_Execution, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 436: $display : In Jr_Execution, the next_state is 0
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 451: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 451: $display : In B_Execution, the next_state is %d
+"C:/Users/TF/Desktop/control_unit.v" line 457: $display : In Bne_Done, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 463: $display : In Beq_Done, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 469: $display : In Jal_Execution, the next_state is 0
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 488: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 488: $display : In I_Execution, the next_state is %d
+"C:/Users/TF/Desktop/control_unit.v" line 494: $display : In  I_Write, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 500: $display : In Lui_Execution, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 506: $display : In Li_Execution, the next_state is 0
+"C:/Users/TF/Desktop/control_unit.v" line 511: $display :  Not implemented!
+WARNING:Xst:2323 - "C:/Users/TF/Desktop/control_unit.v" line 517: Parameter 2 is not constant in call of system task $display.
+"C:/Users/TF/Desktop/control_unit.v" line 517: $display : After the tests, the next_state is %d
+Module <MIPS_control_unit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <MDRWrite> in unit <MIPS_control_unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Bne> in unit <MIPS_control_unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <MIPS_control_unit>.
+    Related source file is "C:/Users/TF/Desktop/control_unit.v".
+WARNING:Xst:1306 - Output <ALUSrcA> is never assigned.
+WARNING:Xst:1306 - Output <ALUSrcB> is never assigned.
+WARNING:Xst:646 - Signal <ALUSrc2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ALUSrc1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x5-bit ROM for signal <$old_next_state_1>.
+WARNING:Xst:737 - Found 1-bit latch for signal <IorD>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <ALUoutSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <ALUOp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <PCSource>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <RegSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <IorR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit register for signal <current_state>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   5 D-type flip-flop(s).
+Unit <MIPS_control_unit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x5-bit ROM                                          : 1
+# Registers                                            : 1
+ 5-bit register                                        : 1
+# Latches                                              : 6
+ 1-bit latch                                           : 2
+ 2-bit latch                                           : 2
+ 3-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x5-bit ROM                                          : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Latches                                              : 6
+ 1-bit latch                                           : 2
+ 2-bit latch                                           : 2
+ 3-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<4>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<3>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<2>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<1>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<0>.
+
+Optimizing unit <MIPS_control_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPS_control_unit, actual ratio is 1.
+FlipFlop current_state_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIPS_control_unit.ngr
+Top Level Output File Name         : MIPS_control_unit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 40
+
+Cell Usage :
+# BELS                             : 111
+#      GND                         : 1
+#      LUT2                        : 9
+#      LUT2_D                      : 2
+#      LUT3                        : 16
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 60
+#      LUT4_D                      : 2
+#      LUT4_L                      : 6
+#      MUXF5                       : 11
+#      VCC                         : 1
+# FlipFlops/Latches                : 18
+#      FDC                         : 6
+#      LD                          : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 5
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       54  out of   4656     1%  
+ Number of Slice Flip Flops:              6  out of   9312     0%  
+ Number of 4 input LUTs:                 98  out of   9312     1%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  36  out of    232    15%  
+    IOB Flip Flops:                      12
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)  | Load  |
+-------------------------------------+------------------------+-------+
+CLK                                  | BUFGP                  | 6     |
+IorR_not0001(IorR_not00011_f5:O)     | NONE(*)(IorR)          | 1     |
+IorD_not0001(IorD_not00012:O)        | NONE(*)(IorD)          | 1     |
+RegSrc_or0000(RegSrc_or0000:O)       | NONE(*)(RegSrc_0)      | 3     |
+ALUOp_not0001(ALUOp_not000152:O)     | NONE(*)(ALUOp_0)       | 3     |
+PCSource_not0001(PCSource_not00012:O)| NONE(*)(PCSource_0)    | 2     |
+ALUoutSrc_or0000(ALUoutSrc_or0000:O) | NONE(*)(ALUoutSrc_0)   | 2     |
+-------------------------------------+------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 6     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.308ns (Maximum Frequency: 158.518MHz)
+   Minimum input arrival time before clock: 8.214ns
+   Maximum output required time after clock: 10.267ns
+   Maximum combinational path delay: 11.765ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.308ns (frequency: 158.518MHz)
+  Total number of paths / destination ports: 183 / 6
+-------------------------------------------------------------------------
+Delay:               6.308ns (Levels of Logic = 4)
+  Source:            current_state_3 (FF)
+  Destination:       current_state_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: current_state_3 to current_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             39   0.591   1.439  current_state_3 (current_state_3)
+     LUT3_D:I0->LO         1   0.704   0.135  MemRead11 (N146)
+     LUT3:I2->O            1   0.704   0.424  ALUoutSrc_cmp_eq00001 (ALUoutSrc_cmp_eq0000)
+     LUT4_D:I3->O          1   0.704   0.595  _old_next_state_5<0>11 (N6)
+     LUT4:I0->O            4   0.704   0.000  _old_next_state_5<0>38 (next_state_0_OBUF)
+     FDC:D                     0.308          current_state_0
+    ----------------------------------------
+    Total                      6.308ns (3.715ns logic, 2.593ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 120 / 6
+-------------------------------------------------------------------------
+Offset:              8.214ns (Levels of Logic = 6)
+  Source:            Opcode<1> (PAD)
+  Destination:       current_state_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Opcode<1> to current_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  Opcode_1_IBUF (Opcode_1_IBUF)
+     LUT4:I0->O            5   0.704   0.808  ALUOp_not0001111 (N13)
+     LUT4_L:I0->LO         1   0.704   0.135  _old_next_state_5<2>51_SW0 (N83)
+     LUT3:I2->O            1   0.704   0.455  _old_next_state_5<2>51 (N46)
+     LUT4_D:I2->O          1   0.704   0.595  _old_next_state_5<0>11 (N6)
+     LUT4:I0->O            4   0.704   0.000  _old_next_state_5<0>38 (next_state_0_OBUF)
+     FDC:D                     0.308          current_state_0
+    ----------------------------------------
+    Total                      8.214ns (5.046ns logic, 3.168ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUOp_not0001'
+  Total number of paths / destination ports: 20 / 3
+-------------------------------------------------------------------------
+Offset:              6.159ns (Levels of Logic = 5)
+  Source:            Opcode<0> (PAD)
+  Destination:       ALUOp_1 (LATCH)
+  Destination Clock: ALUOp_not0001 falling
+
+  Data Path: Opcode<0> to ALUOp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  Opcode_0_IBUF (Opcode_0_IBUF)
+     LUT2:I0->O            2   0.704   0.526  Mrom__old_next_state_11121 (N31)
+     LUT4:I1->O            1   0.704   0.499  ALUOp_mux0000<1>211 (ALUOp_mux0000<1>21)
+     LUT3:I1->O            1   0.704   0.000  ALUOp_mux0000<1>50_F (N132)
+     MUXF5:I0->O           1   0.321   0.000  ALUOp_mux0000<1>50 (ALUOp_mux0000<1>)
+     LD:D                      0.308          ALUOp_1
+    ----------------------------------------
+    Total                      6.159ns (3.959ns logic, 2.200ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IorR_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            IorR (LATCH)
+  Destination:       IorR (PAD)
+  Source Clock:      IorR_not0001 falling
+
+  Data Path: IorR to IorR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  IorR (IorR_OBUF)
+     OBUF:I->O                 3.272          IorR_OBUF (IorR)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 196 / 16
+-------------------------------------------------------------------------
+Offset:              10.267ns (Levels of Logic = 5)
+  Source:            current_state_2 (FF)
+  Destination:       RegWrite (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: current_state_2 to RegWrite
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             43   0.591   1.441  current_state_2 (current_state_2)
+     LUT2:I0->O            3   0.704   0.706  MemWrite_cmp_eq000011 (N38)
+     LUT4:I0->O            3   0.704   0.566  RegWrite_cmp_eq00051 (RegWrite_cmp_eq0005)
+     LUT3:I2->O            1   0.704   0.455  RegWrite_SW0 (N122)
+     LUT4:I2->O            1   0.704   0.420  RegWrite (RegWrite_OBUF)
+     OBUF:I->O                 3.272          RegWrite_OBUF (RegWrite)
+    ----------------------------------------
+    Total                     10.267ns (6.679ns logic, 3.588ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IorD_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            IorD (LATCH)
+  Destination:       IorD (PAD)
+  Source Clock:      IorD_not0001 falling
+
+  Data Path: IorD to IorD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  IorD (IorD_OBUF)
+     OBUF:I->O                 3.272          IorD_OBUF (IorD)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PCSource_not0001'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            PCSource_1 (LATCH)
+  Destination:       PCSource<1> (PAD)
+  Source Clock:      PCSource_not0001 falling
+
+  Data Path: PCSource_1 to PCSource<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  PCSource_1 (PCSource_1)
+     OBUF:I->O                 3.272          PCSource_1_OBUF (PCSource<1>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUOp_not0001'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            ALUOp_2 (LATCH)
+  Destination:       ALUOp<2> (PAD)
+  Source Clock:      ALUOp_not0001 falling
+
+  Data Path: ALUOp_2 to ALUOp<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  ALUOp_2 (ALUOp_2)
+     OBUF:I->O                 3.272          ALUOp_2_OBUF (ALUOp<2>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RegSrc_or0000'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            RegSrc_2 (LATCH)
+  Destination:       RegSrc<2> (PAD)
+  Source Clock:      RegSrc_or0000 falling
+
+  Data Path: RegSrc_2 to RegSrc<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  RegSrc_2 (RegSrc_2)
+     OBUF:I->O                 3.272          RegSrc_2_OBUF (RegSrc<2>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUoutSrc_or0000'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            ALUoutSrc_1 (LATCH)
+  Destination:       ALUoutSrc<1> (PAD)
+  Source Clock:      ALUoutSrc_or0000 falling
+
+  Data Path: ALUoutSrc_1 to ALUoutSrc<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  ALUoutSrc_1 (ALUoutSrc_1)
+     OBUF:I->O                 3.272          ALUoutSrc_1_OBUF (ALUoutSrc<1>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 97 / 5
+-------------------------------------------------------------------------
+Delay:               11.765ns (Levels of Logic = 7)
+  Source:            Opcode<1> (PAD)
+  Destination:       next_state<0> (PAD)
+
+  Data Path: Opcode<1> to next_state<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  Opcode_1_IBUF (Opcode_1_IBUF)
+     LUT4:I0->O            5   0.704   0.808  ALUOp_not0001111 (N13)
+     LUT4_L:I0->LO         1   0.704   0.135  _old_next_state_5<2>51_SW0 (N83)
+     LUT3:I2->O            1   0.704   0.455  _old_next_state_5<2>51 (N46)
+     LUT4_D:I2->O          1   0.704   0.595  _old_next_state_5<0>11 (N6)
+     LUT4:I0->O            4   0.704   0.587  _old_next_state_5<0>38 (next_state_0_OBUF)
+     OBUF:I->O                 3.272          next_state_0_OBUF (next_state<0>)
+    ----------------------------------------
+    Total                     11.765ns (8.010ns logic, 3.755ns route)
+                                       (68.1% logic, 31.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.98 secs
+ 
+--> 
+
+Total memory usage is 255264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

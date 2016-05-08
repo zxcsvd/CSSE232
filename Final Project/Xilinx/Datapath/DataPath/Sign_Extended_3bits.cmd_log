@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended_3bits D:/Datapath/DataPath/Sign_Extended_3bits.sch D:/Datapath/DataPath/Sign_Extended_3bits.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended_3bits D:/Datapath/DataPath/Sign_Extended_3bits.sch D:/Datapath/DataPath/Sign_Extended_3bits.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended_3bits D:/Datapath/DataPath/Sign_Extended_3bits.sch D:/Datapath/DataPath/Sign_Extended_3bits.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended_3bits D:/Datapath/DataPath/Sign_Extended_3bits.sch D:/Datapath/DataPath/Sign_Extended_3bits.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended_3bits D:/Datapath/DataPath/Sign_Extended_3bits.sch D:/Datapath/DataPath/Sign_Extended_3bits.sym 

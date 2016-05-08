@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+SLT instance_name (
+    .overflow(overflow), 
+    .r(r), 
+    .a(a), 
+    .out1(out1)
+    );
+
+

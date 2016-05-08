@@ -1,0 +1,45 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/components/ALU16Bits/alu_alu_sch_tb_isim_beh.exe -prj D:/components/ALU16Bits/alu_alu_sch_tb_beh.prj work.alu_alu_sch_tb work.glbl 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/components/ALU16Bits/add1b.vf" into library work
+Analyzing Verilog file "D:/components/ALU16Bits/buf16.vf" into library work
+Analyzing Verilog file "D:/components/ALU16Bits/SLT.v" into library work
+Analyzing Verilog file "D:/components/ALU16Bits/alu1b.vf" into library work
+Analyzing Verilog file "D:/components/ALU16Bits/alu.vf" into library work
+Analyzing Verilog file "D:/components/ALU16Bits/Test_ALU.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AND2
+Compiling module OR2
+Compiling module OR4
+Compiling module AND3B2
+Compiling module AND3
+Compiling module OR3
+Compiling module add1b_MUSER_alu
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_alu
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_alu
+Compiling module VCC
+Compiling module AND2B1
+Compiling module alu1b_MUSER_alu
+Compiling module GND
+Compiling module AND4B4
+Compiling module XOR2
+Compiling module SLT
+Compiling module INV
+Compiling module AND4
+Compiling module BUF
+Compiling module buf16
+Compiling module alu
+Compiling module alu_alu_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 25 Verilog Units
+Built simulation executable D:/components/ALU16Bits/alu_alu_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28908 KB
+Fuse CPU Usage: 373 ms

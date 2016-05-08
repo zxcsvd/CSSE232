@@ -1,0 +1,18 @@
+ISim log file
+Running: D:\components\mem16x1k_block\work\mem16x1k_block_tb_0_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/components/mem16x1k_block/work/mem16x1k_block_tb_0_isim_beh.wdb 
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+WARNING: at 0 ps: file mem16x1k_block.mif could not be opened
+
+
+1465331350153982224147467232072913762988861607380484459110551152183111192004746149403861397757651932798722481622905633130827289426003030588447311599813025586                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             9529752826999741085998392472533655836518758
+Stopped at time : 0 fs : File "C:/Xilinx/13.4/ISE_DS/ISE/verilog/src/glbl.v" Line 50

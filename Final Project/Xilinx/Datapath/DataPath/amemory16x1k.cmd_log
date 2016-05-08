@@ -1,0 +1,14 @@
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/Block_Mem_16bits.v -lang verilog -prj DataPath -o amemory16x1k.spl -module amemory16x1k -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e amemory16x1k.spl D:/Datapath/DataPath/amemory16x1k.sym 

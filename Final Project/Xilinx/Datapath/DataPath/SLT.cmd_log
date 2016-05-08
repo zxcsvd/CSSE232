@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/components/ALU16Bits/SLT.v -lang verilog -prj DataPath -o SLT.spl -module SLT -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SLT.spl D:/Datapath/DataPath/SLT.sym 

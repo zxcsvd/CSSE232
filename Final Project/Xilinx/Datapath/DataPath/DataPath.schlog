@@ -1,0 +1,72 @@
+select figure at 2109 1231 8 -branches -sn=1
+add autowire 288 1296 416 1296 8 -sn=1
+add autowire 288 1360 416 1360 8 -sn=1
+add autowire 288 1408 304 1408 8 -sn=1
+add autowire 304 1408 416 1408 8 -sn=1
+add autowire 288 1472 416 1472 8 -sn=1
+add autowire 272 1536 288 1536 8 -sn=1
+add autowire 288 1536 416 1536 8 -sn=1
+add autowire 272 1616 416 1632 8 -sn=1
+select figure at 416 1630 8 -branches -sn=1
+move branchpt at 416 1632 to 416 1616 -keepConn -sn=1
+select figure at 493 1622 8 -branches -sn=1
+add autowire 256 1696 416 1696 8 -sn=1
+add autowire 256 1760 416 1760 8 -sn=1
+add autowire 288 1824 432 1824 8 -sn=1
+add autowire 304 1216 432 1216 8 -sn=1
+BeginGroup
+add iomarker 416 1296 0 Unknown Unknown -sn=1
+add iomarker 432 1216 0 Unknown Unknown -sn=1
+EndGroup
+BeginGroup
+add iomarker 416 1360 0 Unknown Unknown -sn=1
+add iomarker 416 1408 0 Unknown Unknown -sn=1
+add iomarker 416 1472 0 Unknown Unknown -sn=1
+add iomarker 416 1536 0 Unknown Unknown -sn=1
+add iomarker 416 1616 0 Unknown Unknown -sn=1
+add iomarker 416 1696 0 Unknown Unknown -sn=1
+add iomarker 416 1760 0 Unknown Unknown -sn=1
+add iomarker 432 1824 0 Unknown Unknown -sn=1
+EndGroup
+select figure at 523 1196 8 -branches -sn=1
+name net at 304 1216 8 Beq -sn=1
+select figure at 444 1299 8 -branches -sn=1
+name net at 288 1296 8 Bne -sn=1
+select figure at 515 1367 8 -branches -sn=1
+name net at 288 1360 8 PCWrite -sn=1
+select figure at 533 1414 8 -branches -sn=1
+name net at 288 1408 8 MemWrite -sn=1
+select figure at 530 1464 8 -branches -sn=1
+name net at 288 1472 8 IRWrite -sn=1
+select figure at 450 1518 8 -branches -sn=1
+name net at 272 1536 8 MDRWrite -sn=1
+select figure at 444 1635 8 -branches -sn=1
+name net at 272 1616 8 RegWrite -sn=1
+select figure at 452 1699 8 -branches -sn=1
+name net at 256 1696 8 ALUOp(2:0) -sn=1
+select figure at 518 1761 8 -branches -sn=1
+name net at 256 1760 8 PCSource(1:0) -sn=1
+select figure at 568 1838 8 -branches -sn=1
+name net at 288 1824 8 IorD(2:0) -sn=1
+add autowire 240 1952 256 1936 8 -sn=1
+add autowire 384 1936 512 1904 8 -sn=1
+undo
+undo
+add autowire 512 1904 272 1904 8 -sn=1
+add autowire 272 1904 272 1920 8 -sn=1
+undo
+undo
+add autowire 272 1920 256 1904 8 -sn=1
+add autowire 256 1904 400 1904 8 -sn=1
+undo
+undo
+add autowire 400 1904 272 1904 8 -sn=1
+add autowire 240 1968 256 1968 8 -sn=1
+add autowire 272 1968 256 1968 8 -sn=1
+add autowire 272 1968 384 1968 8 -sn=1
+add autowire 256 2032 384 2048 8 -sn=1
+add autowire 240 2128 368 2128 8 -sn=1
+select figure at 383 2045 8 -branches -sn=1
+move branchpt at 384 2048 to 384 2032 -keepConn -sn=1
+select figure at 537 2024 8 -branches -sn=1
+select figure at 729 2072 8 -branches -sn=1

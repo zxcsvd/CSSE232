@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux16b8 D:/Datapath/mux16b8.sch D:/Datapath/DataPath/mux16b8.sym 

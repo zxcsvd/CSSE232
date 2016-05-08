@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym reg11 D:/components/11_Bits_Reg/reg11.sch D:/Datapath/DataPath/reg11.sym 
+sch2sym -intstyle ise -family spartan3e -refsym reg11 D:/components/11_Bits_Reg/reg11.sch D:/Datapath/DataPath/reg11.sym 

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/components/Control_Unit/Control_Unit/MIPS_control_unit.xst" -ofn "D:/components/Control_Unit/Control_Unit/MIPS_control_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 MIPS_control_unit.ngc MIPS_control_unit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_control_unit_map.ncd MIPS_control_unit.ngd MIPS_control_unit.pcf 
+par -w -intstyle ise -ol high -t 1 MIPS_control_unit_map.ncd MIPS_control_unit.ncd MIPS_control_unit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPS_control_unit.twx MIPS_control_unit.ncd -o MIPS_control_unit.twr MIPS_control_unit.pcf 
+xst -intstyle ise -ifn "D:/components/Control_Unit/Control_Unit/MIPS_control_unit.xst" -ofn "D:/components/Control_Unit/Control_Unit/MIPS_control_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 MIPS_control_unit.ngc MIPS_control_unit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_control_unit_map.ncd MIPS_control_unit.ngd MIPS_control_unit.pcf 
+par -w -intstyle ise -ol high -t 1 MIPS_control_unit_map.ncd MIPS_control_unit.ncd MIPS_control_unit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPS_control_unit.twx MIPS_control_unit.ncd -o MIPS_control_unit.twr MIPS_control_unit.pcf 

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/components/Zero_Extended/Zero_Extended/Zero_Extended.xst" -ofn "D:/components/Zero_Extended/Zero_Extended/Zero_Extended.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Zero_Extended.ngc Zero_Extended.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Zero_Extended_map.ncd Zero_Extended.ngd Zero_Extended.pcf 
+par -w -intstyle ise -ol high -t 1 Zero_Extended_map.ncd Zero_Extended.ncd Zero_Extended.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Zero_Extended.twx Zero_Extended.ncd -o Zero_Extended.twr Zero_Extended.pcf 
+xst -intstyle ise -ifn "D:/components/Zero_Extended/Zero_Extended.xst" -ofn "D:/components/Zero_Extended/Zero_Extended.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Zero_Extended.ngc Zero_Extended.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Zero_Extended_map.ncd Zero_Extended.ngd Zero_Extended.pcf 
+par -w -intstyle ise -ol high -t 1 Zero_Extended_map.ncd Zero_Extended.ncd Zero_Extended.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Zero_Extended.twx Zero_Extended.ncd -o Zero_Extended.twr Zero_Extended.pcf 

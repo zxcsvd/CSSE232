@@ -1,0 +1,10 @@
+[Inputs]
+overflow
+r
+a
+[Outputs]
+out1
+[BiDir]
+[ATTRIBUTES]
+VeriModel SLT
+

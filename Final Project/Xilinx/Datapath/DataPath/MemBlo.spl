@@ -1,0 +1,11 @@
+[Inputs]
+clka
+=wea[0:0]=
+=addra[15:0]=
+=dina[15:0]=
+[Outputs]
+=douta[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MemBlo
+

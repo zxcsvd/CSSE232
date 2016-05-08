@@ -1,0 +1,6 @@
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/SLT.v -lang verilog -prj alu -o SLT.spl -module SLT -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w SLT.spl /home/zxqdx/csse132/lab04/alu/SLT.sym 
+xst -intstyle ise -ifn "/home/zxqdx/csse132/lab04/alu/SLT.xst" -ofn "/home/zxqdx/csse132/lab04/alu/SLT.syr" 
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/SLT.v -lang verilog -prj alu -o SLT.spl -module SLT -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w SLT.spl /home/zxqdx/csse132/lab04/alu/SLT.sym 
+vhdtdtfi -lang verilog -prj alu -o /home/zxqdx/csse132/lab04/alu/SLT.tfi -lib work /home/zxqdx/csse132/lab04/alu//SLT.v -module SLT -template /opt/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

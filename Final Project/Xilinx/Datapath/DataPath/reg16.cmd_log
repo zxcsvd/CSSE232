@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym reg16 D:/components/16_Bits_reg/reg16.sch D:/Datapath/DataPath/reg16.sym 

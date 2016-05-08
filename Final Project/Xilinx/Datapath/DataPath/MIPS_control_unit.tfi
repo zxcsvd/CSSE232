@@ -1,0 +1,28 @@
+
+
+
+// Instantiate the module
+MIPS_control_unit instance_name (
+    .ALUOp(ALUOp), 
+    .Beq(Beq), 
+    .Bne(Bne), 
+    .PCWrite(PCWrite), 
+    .PCSource(PCSource), 
+    .MemWrite(MemWrite), 
+    .IRWrite(IRWrite), 
+    .MDRWrite(MDRWrite), 
+    .IorD(IorD), 
+    .RegWrite(RegWrite), 
+    .RegSrc(RegSrc), 
+    .ALUSrc1(ALUSrc1), 
+    .ALUSrc2(ALUSrc2), 
+    .ALUoutSrc(ALUoutSrc), 
+    .Opcode(Opcode), 
+    .current_state(current_state), 
+    .next_state(next_state), 
+    .CLK(CLK), 
+    .Reset(Reset), 
+    .DataSrc(DataSrc)
+    );
+
+

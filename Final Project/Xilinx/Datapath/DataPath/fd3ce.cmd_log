@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym fd3ce D:/components/3_Bits_Reg/fd3ce.sch D:/Datapath/DataPath/fd3ce.sym 

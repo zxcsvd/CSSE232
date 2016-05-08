@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.xst" -ofn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.xst" -ofn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.xst" -ofn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.xst" -ofn "/home/jiangxingcheng/csse132/lab04/lab4/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "/home/zxqdx/csse132/lab04/alu/alu1b.xst" -ofn "/home/zxqdx/csse132/lab04/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+sch2sym -intstyle ise -family spartan3e -refsym alu1b /home/zxqdx/csse132/lab04/alu/alu1b.sch /home/zxqdx/csse132/lab04/alu/alu1b.sym 
+sch2sym -intstyle ise -family spartan3e -refsym alu1b /home/zxqdx/csse132/lab04/alu/alu1b.sch /home/zxqdx/csse132/lab04/alu/alu1b.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog alu1b_drc.vf -w /home/zxqdx/csse132/lab04/alu/alu1b.sch 
+sch2sym -intstyle ise -family spartan3e -refsym alu1b /home/zxqdx/csse132/lab04/alu/alu1b.sch /home/zxqdx/csse132/lab04/alu/alu1b.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym alu1b /home/zxqdx/csse132/lab04/alu/alu1b.sch /home/zxqdx/csse132/lab04/alu/alu1b.sym 
+xst -intstyle ise -ifn "/home/zxqdx/csse132/lab04/alu/alu1b.xst" -ofn "/home/zxqdx/csse132/lab04/alu/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu1b.ngc alu1b.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+sch2sym -intstyle ise -family spartan3e -w -refsym alu1b /home/zxqdx/csse132/lab04/alu/alu1b.sch /home/zxqdx/csse132/lab04/alu/alu1b.sym 

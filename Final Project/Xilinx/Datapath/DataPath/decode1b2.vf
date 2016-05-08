@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : decode1b2.vf
+// /___/   /\     Timestamp : 11/12/2014 03:35:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Datapath/DataPath/decode1b2.vf -w D:/components/Register_File/regEXE/decode1b2.sch
+//Design Name: decode1b2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module decode1b2(A, 
+                 enable, 
+                 O0, 
+                 O1);
+
+    input A;
+    input enable;
+   output O0;
+   output O1;
+   
+   wire nA0;
+   
+   INV  XLXI_1 (.I(A), 
+               .O(nA0));
+   AND2  XLXI_15 (.I0(enable), 
+                 .I1(A), 
+                 .O(O0));
+   AND2  XLXI_16 (.I0(enable), 
+                 .I1(nA0), 
+                 .O(O1));
+endmodule

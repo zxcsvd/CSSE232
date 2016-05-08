@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,D:/components/ALU16Bits/alu.vf,-w,D:/components/ALU16Bits/alu.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,D:/components/ALU16Bits/buf16.vf,-w,D:/interrupt register/buf16.sch

@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux16b2 D:/components/Register_File/mux16b2.sch D:/components/Register_File/mux16b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mux16b2 D:/components/Register_File/mux16b2.sch D:/components/Register_File/mux16b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mux16b2 D:/components/Register_File/mux16b2.sch D:/components/Register_File/mux16b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mux16b2 D:/components/Register_File/mux16b2.sch D:/components/Register_File/mux16b2.sym 

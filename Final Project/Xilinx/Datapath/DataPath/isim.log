@@ -1,0 +1,78 @@
+ISim log file
+Running: D:\Datapath\DataPath\DataPath_DataPath_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Datapath/DataPath/DataPath_DataPath_sch_tb_isim_beh.wdb 
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+not implemented
+ST The current state is  0
+ST The next state is  x
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+Finished circuit initialization process.
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+ST The current state is  0
+ST The next state is  1
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+ST The current state is  1
+ST The next state is  1
+The current state is  1
+The opcode is  1
+The next state is R_Execution
+In Decode, the next_state is  2
+After the tests, the next_state is  2
+ST The current state is  2
+ST The next state is  2
+The current state is  2
+In R_Exec, the next_state is  3
+After the tests, the next_state is  3
+ST The current state is  3
+ST The next state is  3
+The current state is  3
+In R_Write, the next_state is  0
+After the tests, the next_state is  0
+ST The current state is  0
+ST The next state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+ST The current state is  1
+ST The next state is  1
+The current state is  1
+The opcode is  1
+The next state is R_Execution
+In Decode, the next_state is  2
+After the tests, the next_state is  2
+ST The current state is  2
+ST The next state is  2
+The current state is  2
+In R_Exec, the next_state is  3
+After the tests, the next_state is  3
+ST The current state is  3
+ST The next state is  3
+The current state is  3
+In R_Write, the next_state is  0
+After the tests, the next_state is  0
+ST The current state is  0
+ST The next state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+ST The current state is  1
+ST The next state is  1
+The current state is  1
+The opcode is  1
+The next state is R_Execution
+In Decode, the next_state is  2
+After the tests, the next_state is  2

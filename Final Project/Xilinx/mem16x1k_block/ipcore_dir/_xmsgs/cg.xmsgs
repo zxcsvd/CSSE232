@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="sim" num="172" delta="old" >Generating IP...
+</msg>
+
+<msg type="error" file="coreutil" num="0" delta="new" >ERROR:sim - Unable to find
+   /home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/trunk/scrat
+   ch/mem16x1k_block/memory_small.coe
+   Coregen is looking for
+   D:\home\mellor\ProfessionalArchives\Teaching\Class\csse232_csse_svn\trunk\scr
+   atch\mem16x1k_block\memory_small.coe
+ERROR:sim - Unable to find
+   /home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/trunk/scrat
+   ch/mem16x1k_block/memory_small.coe
+   Coregen is looking for
+   D:\home\mellor\ProfessionalArchives\Teaching\Class\csse232_csse_svn\trunk\scr
+   atch\mem16x1k_block\memory_small.coe
+ERROR:sim:781 - An invalid core configuration has been detected during
+   Customization. Core parameters will be reset to their default values.
+</msg>
+
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING:sim:192 - Xco Parameter changed from (Component_Name,mem16x1k_block) to
+   (Component_Name,blk_mem_gen_v4_2) during Recustomization.
+WARNING:sim:192 - Xco Parameter changed from (Write_Depth_A,1024) to
+   (Write_Depth_A,16) during Recustomization.
+WARNING:sim:192 - Xco Parameter changed from (Load_Init_File,true) to
+   (Load_Init_File,false) during Recustomization.
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,/home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/t
+   runk/scratch/mem16x1k_block/memory_small.coe) to
+   (Coe_File,no_coe_file_loaded) during Recustomization.
+</msg>
+
+<msg type="error" file="coreutil" num="1010" delta="new" >Command &apos;<arg fmt="%s" index="1">C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe -cg_exc_inp ./tmp/_cg/xil_18064_5.in -cg_exc_out ./tmp/_cg/xil_18064_5.out -namelock</arg>&apos; failed, returning a non-zero exit code &apos;<arg fmt="%x" index="2">2</arg>&apos;:
+<arg fmt="%s" index="3">C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe: unknown error occurred.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;mem16x1k_block&apos;.  An error occurred. Please see the log for details.
+</msg>
+
+</messages>

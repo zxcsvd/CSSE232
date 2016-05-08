@@ -1,0 +1,41 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Customizing IP...
+Release 13.4 - Xilinx CORE Generator IP GUI Launcher O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+ERROR:coreutil - ERROR:sim - Unable to find
+   /home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/trunk/scrat
+      ch/mem16x1k_block/memory_small.coe
+      Coregen is looking for
+   D:\home\mellor\ProfessionalArchives\Teaching\Class\csse232_csse_svn\trunk\scr
+      atch\mem16x1k_block\memory_small.coe
+   ERROR:sim - Unable to find
+   /home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/trunk/scrat
+      ch/mem16x1k_block/memory_small.coe
+      Coregen is looking for
+   D:\home\mellor\ProfessionalArchives\Teaching\Class\csse232_csse_svn\trunk\scr
+      atch\mem16x1k_block\memory_small.coe
+   ERROR:sim:781 - An invalid core configuration has been detected during
+      Customization. Core parameters will be reset to their default values.
+WARNING:coreutil - WARNING:sim:192 - Xco Parameter changed from
+   (Component_Name,mem16x1k_block) to
+      (Component_Name,blk_mem_gen_v4_2) during Recustomization.
+   WARNING:sim:192 - Xco Parameter changed from (Write_Depth_A,1024) to
+      (Write_Depth_A,16) during Recustomization.
+   WARNING:sim:192 - Xco Parameter changed from (Load_Init_File,true) to
+      (Load_Init_File,false) during Recustomization.
+   WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,/home/mellor/ProfessionalArchives/Teaching/Class/csse232_csse_svn/t
+      runk/scratch/mem16x1k_block/memory_small.coe) to
+      (Coe_File,no_coe_file_loaded) during Recustomization.
+ERROR:coreutil:1010 - Command
+   'C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe -cg_exc_inp
+   ./tmp/_cg/xil_18064_5.in -cg_exc_out ./tmp/_cg/xil_18064_5.out -namelock'
+   failed, returning a non-zero exit code '2':
+   C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe: unknown error
+   occurred.
+An Error occurred during Customization.
+ERROR:sim - Failed to generate 'mem16x1k_block'.  An error occurred. Please see
+   the log for details.
+Wrote CGP file for project 'mem16x1k_block'.

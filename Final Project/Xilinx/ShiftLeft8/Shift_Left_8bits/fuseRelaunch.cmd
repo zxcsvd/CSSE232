@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/components/ShiftLeft8/Shift_Left_8bits/ShiftLeftBy8Test_isim_beh.exe" -prj "D:/components/ShiftLeft8/Shift_Left_8bits/ShiftLeftBy8Test_beh.prj" "work.ShiftLeftBy8Test" "work.glbl" 

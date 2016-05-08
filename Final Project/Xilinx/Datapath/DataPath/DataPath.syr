@@ -1,0 +1,2120 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: DataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DataPath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DataPath"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : DataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "add1b.vf" in library work
+Compiling verilog file "SLT.v" in library work
+Module <add1b> compiled
+Compiling verilog file "mux16b2.vf" in library work
+Module <SLT> compiled
+Module <M2_1E_MXILINX_mux16b2> compiled
+Compiling verilog file "fd8ce.vf" in library work
+Module <mux16b2> compiled
+Compiling verilog file "fd3ce.vf" in library work
+Module <fd8ce> compiled
+Compiling verilog file "fd11ce.vf" in library work
+Module <fd3ce> compiled
+Compiling verilog file "decode1b2.vf" in library work
+Module <fd11ce> compiled
+Compiling verilog file "alu1b.vf" in library work
+Module <decode1b2> compiled
+Module <M2_1E_MXILINX_alu1b> compiled
+Module <M4_1E_MXILINX_alu1b> compiled
+Module <add1b_MUSER_alu1b> compiled
+Compiling verilog file "buf16.vf" in library work
+Module <alu1b> compiled
+Compiling verilog file "mux16b8.vf" in library work
+Module <buf16> compiled
+Module <M2_1E_MXILINX_mux16b8> compiled
+Module <M8_1E_MXILINX_mux16b8> compiled
+Compiling verilog file "Zero_Extended.v" in library work
+Module <mux16b8> compiled
+Compiling verilog file "Sign_Extended_8bits.vf" in library work
+Module <Zero_Extended> compiled
+Compiling verilog file "Sign_Extended_3bits.vf" in library work
+Module <Sign_Extended_8bits> compiled
+Compiling verilog file "Sign_Extended.vf" in library work
+Module <Sign_Extended_3bits> compiled
+Compiling verilog file "ShiftLeftBy8.v" in library work
+Module <Sign_Extended> compiled
+Compiling verilog file "regFile16b2.vf" in library work
+Module <ShiftLeftBy8> compiled
+Module <M2_1E_MXILINX_regFile16b2> compiled
+Module <mux16b2_MUSER_regFile16b2> compiled
+Module <FD16RE_MXILINX_regFile16b2> compiled
+Compiling verilog file "reg8.vf" in library work
+Module <regFile16b2> compiled
+Module <fd8ce_MUSER_reg8> compiled
+Compiling verilog file "reg3.vf" in library work
+Module <reg8> compiled
+Module <fd3ce_MUSER_reg3> compiled
+Compiling verilog file "reg16.vf" in library work
+Module <reg3> compiled
+Module <FD16CE_MXILINX_reg16> compiled
+Compiling verilog file "reg11.vf" in library work
+Module <reg16> compiled
+Module <fd11ce_MUSER_reg11> compiled
+Compiling verilog file "mux4b16.vf" in library work
+Module <reg11> compiled
+Module <M2_1E_MXILINX_mux4b16> compiled
+Module <M4_1E_MXILINX_mux4b16> compiled
+Compiling verilog file "control_unit.v" in library work
+Module <mux4b16> compiled
+Compiling verilog file "Block_Mem_16bits.v" in library work
+Module <MIPS_control_unit> compiled
+Compiling verilog file "alu.vf" in library work
+Module <amemory16x1k> compiled
+Module <M2_1E_MXILINX_alu> compiled
+Module <M4_1E_MXILINX_alu> compiled
+Module <add1b_MUSER_alu> compiled
+Module <alu1b_MUSER_alu> compiled
+Compiling verilog file "DataPath.vf" in library work
+Module <alu> compiled
+Module <M2_1E_MXILINX_DataPath> compiled
+Module <mux16b2_MUSER_DataPath> compiled
+Module <Sign_Extended_3bits_MUSER_DataPath> compiled
+Module <Sign_Extended_8bits_MUSER_DataPath> compiled
+Module <M4_1E_MXILINX_DataPath> compiled
+Module <mux4b16_MUSER_DataPath> compiled
+Module <fd3ce_MUSER_DataPath> compiled
+Module <reg3_MUSER_DataPath> compiled
+Module <FD16CE_MXILINX_DataPath> compiled
+Module <reg16_MUSER_DataPath> compiled
+Module <Sign_Extended_MUSER_DataPath> compiled
+Module <FD8CE_MXILINX_DataPath> compiled
+Module <reg8_MUSER_DataPath> compiled
+Module <fd11ce_MUSER_DataPath> compiled
+Module <reg11_MUSER_DataPath> compiled
+Module <DataPath> compiled
+No errors in compilation
+Analysis of file <"DataPath.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DataPath> in library <work>.
+
+Analyzing hierarchy for module <reg16_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <mux4b16_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <reg11_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <reg8_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <ShiftLeftBy8> in library <work>.
+
+Analyzing hierarchy for module <regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <mux16b8> in library <work>.
+
+Analyzing hierarchy for module <Zero_Extended> in library <work>.
+
+Analyzing hierarchy for module <Sign_Extended_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <reg3_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <mux16b2_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <Sign_Extended_8bits_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <Sign_Extended_3bits_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <MIPS_control_unit> in library <work> with parameters.
+	Address = "00000000000000000000000000000100"
+	B_Execution = "00000000000000000000000000001010"
+	Beq_Done = "00000000000000000000000000001100"
+	Bne_Done = "00000000000000000000000000001011"
+	Decode = "00000000000000000000000000000001"
+	Fetch = "00000000000000000000000000000000"
+	I_Execution = "00000000000000000000000000001110"
+	I_Write = "00000000000000000000000000001111"
+	J_Execution = "00000000000000000000000000001000"
+	Jal_ALU = "00000000000000000000000000010100"
+	Jal_Done = "00000000000000000000000000010101"
+	Jal_Execution = "00000000000000000000000000001101"
+	Jal_Load = "00000000000000000000000000010010"
+	Jal_Read = "00000000000000000000000000010011"
+	Jr_Execution = "00000000000000000000000000001001"
+	LW_Done = "00000000000000000000000000000111"
+	LW_Execution = "00000000000000000000000000000101"
+	Li_Execution = "00000000000000000000000000010001"
+	Lui_Execution = "00000000000000000000000000010000"
+	R_Execution = "00000000000000000000000000000010"
+	R_Write = "00000000000000000000000000000011"
+	Return_ALU = "00000000000000000000000000010111"
+	Return_Done = "00000000000000000000000000011010"
+	Return_Execution = "00000000000000000000000000010110"
+	Return_Load = "00000000000000000000000000011000"
+	Return_Read = "00000000000000000000000000011001"
+	SW_Done = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <amemory16x1k> in library <work>.
+
+Analyzing hierarchy for module <FD16CE_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <fd11ce_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <FD8CE_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <FD16RE_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <decode1b2> in library <work>.
+
+Analyzing hierarchy for module <mux16b2_MUSER_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <buf16> in library <work>.
+
+Analyzing hierarchy for module <alu1b_MUSER_alu> in library <work>.
+
+Analyzing hierarchy for module <SLT> in library <work>.
+
+Analyzing hierarchy for module <fd3ce_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <mux16b2_MUSER_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_regFile16b2> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_mux16b8> in library <work>.
+
+Analyzing hierarchy for module <add1b_MUSER_alu> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_alu> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_DataPath> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DataPath>.
+Module <DataPath> is correct for synthesis.
+ 
+Analyzing module <reg16_MUSER_DataPath> in library <work>.
+Module <reg16_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_2_34" for instance <XLXI_2> in unit <reg16_MUSER_DataPath>.
+Analyzing module <FD16CE_MXILINX_DataPath> in library <work>.
+Module <FD16CE_MXILINX_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_DataPath>.
+Analyzing module <mux4b16_MUSER_DataPath> in library <work>.
+Module <mux4b16_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_100_31" for instance <XLXI_100> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_101_32" for instance <XLXI_101> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_102_33" for instance <XLXI_102> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_87_18" for instance <XLXI_87> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_88_19" for instance <XLXI_88> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_89_20" for instance <XLXI_89> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_90_21" for instance <XLXI_90> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_91_22" for instance <XLXI_91> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_92_23" for instance <XLXI_92> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_93_24" for instance <XLXI_93> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_94_25" for instance <XLXI_94> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_95_26" for instance <XLXI_95> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_96_27" for instance <XLXI_96> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_97_28" for instance <XLXI_97> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_98_29" for instance <XLXI_98> in unit <mux4b16_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_99_30" for instance <XLXI_99> in unit <mux4b16_MUSER_DataPath>.
+Analyzing module <M4_1E_MXILINX_DataPath.1> in library <work>.
+Module <M4_1E_MXILINX_DataPath.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.1>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.1>.
+Analyzing module <M2_1E_MXILINX_DataPath.17> in library <work>.
+Module <M2_1E_MXILINX_DataPath.17> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.18> in library <work>.
+Module <M2_1E_MXILINX_DataPath.18> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_DataPath.2> in library <work>.
+Module <M4_1E_MXILINX_DataPath.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.2>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.2>.
+Analyzing module <M4_1E_MXILINX_DataPath.3> in library <work>.
+Module <M4_1E_MXILINX_DataPath.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.3>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.3>.
+Analyzing module <M4_1E_MXILINX_DataPath.4> in library <work>.
+Module <M4_1E_MXILINX_DataPath.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.4>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.4>.
+Analyzing module <M4_1E_MXILINX_DataPath.5> in library <work>.
+Module <M4_1E_MXILINX_DataPath.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.5>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.5>.
+Analyzing module <M4_1E_MXILINX_DataPath.6> in library <work>.
+Module <M4_1E_MXILINX_DataPath.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.6>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.6>.
+Analyzing module <M4_1E_MXILINX_DataPath.7> in library <work>.
+Module <M4_1E_MXILINX_DataPath.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.7>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.7>.
+Analyzing module <M4_1E_MXILINX_DataPath.8> in library <work>.
+Module <M4_1E_MXILINX_DataPath.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.8>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.8>.
+Analyzing module <M4_1E_MXILINX_DataPath.9> in library <work>.
+Module <M4_1E_MXILINX_DataPath.9> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.9>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.9>.
+Analyzing module <M4_1E_MXILINX_DataPath.10> in library <work>.
+Module <M4_1E_MXILINX_DataPath.10> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.10>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.10>.
+Analyzing module <M4_1E_MXILINX_DataPath.11> in library <work>.
+Module <M4_1E_MXILINX_DataPath.11> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.11>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.11>.
+Analyzing module <M4_1E_MXILINX_DataPath.12> in library <work>.
+Module <M4_1E_MXILINX_DataPath.12> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.12>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.12>.
+Analyzing module <M4_1E_MXILINX_DataPath.13> in library <work>.
+Module <M4_1E_MXILINX_DataPath.13> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.13>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.13>.
+Analyzing module <M4_1E_MXILINX_DataPath.14> in library <work>.
+Module <M4_1E_MXILINX_DataPath.14> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.14>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.14>.
+Analyzing module <M4_1E_MXILINX_DataPath.15> in library <work>.
+Module <M4_1E_MXILINX_DataPath.15> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.15>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.15>.
+Analyzing module <M4_1E_MXILINX_DataPath.16> in library <work>.
+Module <M4_1E_MXILINX_DataPath.16> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_DataPath.16>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_DataPath.16>.
+Analyzing module <reg11_MUSER_DataPath> in library <work>.
+Module <reg11_MUSER_DataPath> is correct for synthesis.
+ 
+Analyzing module <fd11ce_MUSER_DataPath> in library <work>.
+Module <fd11ce_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <fd11ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <fd11ce_MUSER_DataPath>.
+Analyzing module <reg8_MUSER_DataPath> in library <work>.
+Module <reg8_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_4_35" for instance <XLXI_4> in unit <reg8_MUSER_DataPath>.
+Analyzing module <FD8CE_MXILINX_DataPath> in library <work>.
+Module <FD8CE_MXILINX_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD8CE_MXILINX_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8CE_MXILINX_DataPath>.
+Analyzing module <ShiftLeftBy8> in library <work>.
+Module <ShiftLeftBy8> is correct for synthesis.
+ 
+Analyzing module <regFile16b2> in library <work>.
+Module <regFile16b2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_3_16" for instance <XLXI_3> in unit <regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_4_17" for instance <XLXI_4> in unit <regFile16b2>.
+Analyzing module <FD16RE_MXILINX_regFile16b2.1> in library <work>.
+Module <FD16RE_MXILINX_regFile16b2.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_regFile16b2.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_regFile16b2.1>.
+Analyzing module <FD16RE_MXILINX_regFile16b2.2> in library <work>.
+Module <FD16RE_MXILINX_regFile16b2.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_regFile16b2.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_regFile16b2.2>.
+Analyzing module <decode1b2> in library <work>.
+Module <decode1b2> is correct for synthesis.
+ 
+Analyzing module <mux16b2_MUSER_regFile16b2> in library <work>.
+Module <mux16b2_MUSER_regFile16b2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_10_6" for instance <XLXI_10> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_11_7" for instance <XLXI_11> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_12_8" for instance <XLXI_12> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_13_9" for instance <XLXI_13> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_14_10" for instance <XLXI_14> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_15_11" for instance <XLXI_15> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_16_12" for instance <XLXI_16> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_17_13" for instance <XLXI_17> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_18_14" for instance <XLXI_18> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_19_15" for instance <XLXI_19> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_4_0" for instance <XLXI_4> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_5_1" for instance <XLXI_5> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_6_2" for instance <XLXI_6> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_7_3" for instance <XLXI_7> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_8_4" for instance <XLXI_8> in unit <mux16b2_MUSER_regFile16b2>.
+    Set user-defined property "HU_SET =  XLXI_9_5" for instance <XLXI_9> in unit <mux16b2_MUSER_regFile16b2>.
+Analyzing module <M2_1E_MXILINX_regFile16b2.1> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.2> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.2> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.3> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.3> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.4> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.4> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.5> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.5> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.6> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.6> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.7> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.7> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.8> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.8> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.9> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.9> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.10> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.10> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.11> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.11> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.12> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.12> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.13> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.13> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.14> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.14> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.15> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.15> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_regFile16b2.16> in library <work>.
+Module <M2_1E_MXILINX_regFile16b2.16> is correct for synthesis.
+ 
+Analyzing module <mux16b8> in library <work>.
+Module <mux16b8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_25" for instance <XLXI_1> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_10_27" for instance <XLXI_10> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_11_28" for instance <XLXI_11> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_24_29" for instance <XLXI_24> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_25_30" for instance <XLXI_25> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_26_31" for instance <XLXI_26> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_27_32" for instance <XLXI_27> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_28_33" for instance <XLXI_28> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_29_34" for instance <XLXI_29> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_30_35" for instance <XLXI_30> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_31_36" for instance <XLXI_31> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_32_37" for instance <XLXI_32> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_33_38" for instance <XLXI_33> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_34_39" for instance <XLXI_34> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_35_40" for instance <XLXI_35> in unit <mux16b8>.
+    Set user-defined property "HU_SET =  XLXI_9_26" for instance <XLXI_9> in unit <mux16b8>.
+Analyzing module <M8_1E_MXILINX_mux16b8.1> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.1>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.1>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.1>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.1>.
+Analyzing module <M2_1E_MXILINX_mux16b8.1> in library <work>.
+Module <M2_1E_MXILINX_mux16b8.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_mux16b8.2> in library <work>.
+Module <M2_1E_MXILINX_mux16b8.2> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_mux16b8.3> in library <work>.
+Module <M2_1E_MXILINX_mux16b8.3> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_mux16b8.4> in library <work>.
+Module <M2_1E_MXILINX_mux16b8.4> is correct for synthesis.
+ 
+Analyzing module <M8_1E_MXILINX_mux16b8.2> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.2>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.2>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.2>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.2>.
+Analyzing module <M8_1E_MXILINX_mux16b8.3> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.3>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.3>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.3>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.3>.
+Analyzing module <M8_1E_MXILINX_mux16b8.4> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.4>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.4>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.4>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.4>.
+Analyzing module <M8_1E_MXILINX_mux16b8.5> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.5>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.5>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.5>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.5>.
+Analyzing module <M8_1E_MXILINX_mux16b8.6> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.6>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.6>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.6>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.6>.
+Analyzing module <M8_1E_MXILINX_mux16b8.7> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.7>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.7>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.7>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.7>.
+Analyzing module <M8_1E_MXILINX_mux16b8.8> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.8>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.8>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.8>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.8>.
+Analyzing module <M8_1E_MXILINX_mux16b8.9> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.9> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.9>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.9>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.9>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.9>.
+Analyzing module <M8_1E_MXILINX_mux16b8.10> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.10> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.10>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.10>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.10>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.10>.
+Analyzing module <M8_1E_MXILINX_mux16b8.11> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.11> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.11>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.11>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.11>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.11>.
+Analyzing module <M8_1E_MXILINX_mux16b8.12> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.12> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.12>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.12>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.12>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.12>.
+Analyzing module <M8_1E_MXILINX_mux16b8.13> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.13> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.13>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.13>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.13>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.13>.
+Analyzing module <M8_1E_MXILINX_mux16b8.14> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.14> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.14>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.14>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.14>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.14>.
+Analyzing module <M8_1E_MXILINX_mux16b8.15> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.15> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.15>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.15>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.15>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.15>.
+Analyzing module <M8_1E_MXILINX_mux16b8.16> in library <work>.
+Module <M8_1E_MXILINX_mux16b8.16> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_24" for instance <I_M01> in unit <M8_1E_MXILINX_mux16b8.16>.
+    Set user-defined property "HU_SET =  I_M23_23" for instance <I_M23> in unit <M8_1E_MXILINX_mux16b8.16>.
+    Set user-defined property "HU_SET =  I_M45_22" for instance <I_M45> in unit <M8_1E_MXILINX_mux16b8.16>.
+    Set user-defined property "HU_SET =  I_M67_21" for instance <I_M67> in unit <M8_1E_MXILINX_mux16b8.16>.
+Analyzing module <Zero_Extended> in library <work>.
+Module <Zero_Extended> is correct for synthesis.
+ 
+Analyzing module <Sign_Extended_MUSER_DataPath> in library <work>.
+Module <Sign_Extended_MUSER_DataPath> is correct for synthesis.
+ 
+Analyzing module <buf16> in library <work>.
+Module <buf16> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <alu1b_MUSER_alu> in library <work>.
+Module <alu1b_MUSER_alu> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_4_2" for instance <XLXI_4> in unit <alu1b_MUSER_alu>.
+Analyzing module <add1b_MUSER_alu> in library <work>.
+Module <add1b_MUSER_alu> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_alu> in library <work>.
+Module <M4_1E_MXILINX_alu> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_alu>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_alu>.
+Analyzing module <M2_1E_MXILINX_alu.1> in library <work>.
+Module <M2_1E_MXILINX_alu.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_alu.2> in library <work>.
+Module <M2_1E_MXILINX_alu.2> is correct for synthesis.
+ 
+Analyzing module <SLT> in library <work>.
+Module <SLT> is correct for synthesis.
+ 
+Analyzing module <reg3_MUSER_DataPath> in library <work>.
+Module <reg3_MUSER_DataPath> is correct for synthesis.
+ 
+Analyzing module <fd3ce_MUSER_DataPath> in library <work>.
+Module <fd3ce_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <fd3ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <fd3ce_MUSER_DataPath>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <fd3ce_MUSER_DataPath>.
+Analyzing module <mux16b2_MUSER_DataPath> in library <work>.
+Module <mux16b2_MUSER_DataPath> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_10_6" for instance <XLXI_10> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_11_7" for instance <XLXI_11> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_12_8" for instance <XLXI_12> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_13_9" for instance <XLXI_13> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_14_10" for instance <XLXI_14> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_15_11" for instance <XLXI_15> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_16_12" for instance <XLXI_16> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_17_13" for instance <XLXI_17> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_18_14" for instance <XLXI_18> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_19_15" for instance <XLXI_19> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_4_0" for instance <XLXI_4> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_5_1" for instance <XLXI_5> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_6_2" for instance <XLXI_6> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_7_3" for instance <XLXI_7> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_8_4" for instance <XLXI_8> in unit <mux16b2_MUSER_DataPath>.
+    Set user-defined property "HU_SET =  XLXI_9_5" for instance <XLXI_9> in unit <mux16b2_MUSER_DataPath>.
+Analyzing module <M2_1E_MXILINX_DataPath.1> in library <work>.
+Module <M2_1E_MXILINX_DataPath.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.2> in library <work>.
+Module <M2_1E_MXILINX_DataPath.2> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.3> in library <work>.
+Module <M2_1E_MXILINX_DataPath.3> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.4> in library <work>.
+Module <M2_1E_MXILINX_DataPath.4> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.5> in library <work>.
+Module <M2_1E_MXILINX_DataPath.5> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.6> in library <work>.
+Module <M2_1E_MXILINX_DataPath.6> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.7> in library <work>.
+Module <M2_1E_MXILINX_DataPath.7> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.8> in library <work>.
+Module <M2_1E_MXILINX_DataPath.8> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.9> in library <work>.
+Module <M2_1E_MXILINX_DataPath.9> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.10> in library <work>.
+Module <M2_1E_MXILINX_DataPath.10> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.11> in library <work>.
+Module <M2_1E_MXILINX_DataPath.11> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.12> in library <work>.
+Module <M2_1E_MXILINX_DataPath.12> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.13> in library <work>.
+Module <M2_1E_MXILINX_DataPath.13> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.14> in library <work>.
+Module <M2_1E_MXILINX_DataPath.14> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.15> in library <work>.
+Module <M2_1E_MXILINX_DataPath.15> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_DataPath.16> in library <work>.
+Module <M2_1E_MXILINX_DataPath.16> is correct for synthesis.
+ 
+Analyzing module <Sign_Extended_8bits_MUSER_DataPath> in library <work>.
+Module <Sign_Extended_8bits_MUSER_DataPath> is correct for synthesis.
+ 
+Analyzing module <Sign_Extended_3bits_MUSER_DataPath> in library <work>.
+Module <Sign_Extended_3bits_MUSER_DataPath> is correct for synthesis.
+ 
+Analyzing module <MIPS_control_unit> in library <work>.
+	Address = 32'sb00000000000000000000000000000100
+	B_Execution = 32'sb00000000000000000000000000001010
+	Beq_Done = 32'sb00000000000000000000000000001100
+	Bne_Done = 32'sb00000000000000000000000000001011
+	Decode = 32'sb00000000000000000000000000000001
+	Fetch = 32'sb00000000000000000000000000000000
+	I_Execution = 32'sb00000000000000000000000000001110
+	I_Write = 32'sb00000000000000000000000000001111
+	J_Execution = 32'sb00000000000000000000000000001000
+	Jal_ALU = 32'sb00000000000000000000000000010100
+	Jal_Done = 32'sb00000000000000000000000000010101
+	Jal_Execution = 32'sb00000000000000000000000000001101
+	Jal_Load = 32'sb00000000000000000000000000010010
+	Jal_Read = 32'sb00000000000000000000000000010011
+	Jr_Execution = 32'sb00000000000000000000000000001001
+	LW_Done = 32'sb00000000000000000000000000000111
+	LW_Execution = 32'sb00000000000000000000000000000101
+	Li_Execution = 32'sb00000000000000000000000000010001
+	Lui_Execution = 32'sb00000000000000000000000000010000
+	R_Execution = 32'sb00000000000000000000000000000010
+	R_Write = 32'sb00000000000000000000000000000011
+	Return_ALU = 32'sb00000000000000000000000000010111
+	Return_Done = 32'sb00000000000000000000000000011010
+	Return_Execution = 32'sb00000000000000000000000000010110
+	Return_Load = 32'sb00000000000000000000000000011000
+	Return_Read = 32'sb00000000000000000000000000011001
+	SW_Done = 32'sb00000000000000000000000000000110
+"control_unit.v" line 358: $display : not implemented
+WARNING:Xst:905 - "control_unit.v" line 108: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Opcode>
+WARNING:Xst:2323 - "control_unit.v" line 367: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 367: $display : The current state is %d
+"control_unit.v" line 374: $display : In Fetch, the next_state is 1
+WARNING:Xst:2323 - "control_unit.v" line 379: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 379: $display : The opcode is %d
+"control_unit.v" line 384: $display : The next state is R_Execution
+"control_unit.v" line 389: $display : The next state is R_Execution
+"control_unit.v" line 394: $display : The next state is R_Execution
+"control_unit.v" line 399: $display : The next state is R_Execution
+"control_unit.v" line 404: $display : The next state is R_Execution
+"control_unit.v" line 409: $display : The next state is Jr_Execution
+"control_unit.v" line 414: $display : The next state is Address
+"control_unit.v" line 419: $display : The next state is Jal_Execution
+"control_unit.v" line 424: $display : The next state is B_Execution
+"control_unit.v" line 429: $display : The next state is B_Execution
+"control_unit.v" line 434: $display : The next state is Address
+"control_unit.v" line 439: $display : The next state is I_Execution
+"control_unit.v" line 444: $display : The next state is J_Execution
+"control_unit.v" line 449: $display : The next state is Return_Execution
+"control_unit.v" line 454: $display : The next state is Lui_Execution
+"control_unit.v" line 459: $display : The next state is Li_Execution
+WARNING:Xst:2323 - "control_unit.v" line 463: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 463: $display :  Wrong Opcode %d 
+WARNING:Xst:2323 - "control_unit.v" line 468: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 468: $display : In Decode, the next_state is %d
+"control_unit.v" line 474: $display : In R_Exec, the next_state is 3
+"control_unit.v" line 480: $display : In R_Write, the next_state is 0
+WARNING:Xst:2323 - "control_unit.v" line 495: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 495: $display : In Address, the next_state is %d
+"control_unit.v" line 501: $display : In LW_Execution, the next_state is 7
+"control_unit.v" line 507: $display : In SW_Done, the next_state is 0
+"control_unit.v" line 513: $display : In J_Execution, the next_state is 0
+"control_unit.v" line 519: $display : In Jr_Execution, the next_state is 0
+WARNING:Xst:2323 - "control_unit.v" line 534: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 534: $display : In B_Execution, the next_state is %d
+"control_unit.v" line 540: $display : In Bne_Done, the next_state is 0
+"control_unit.v" line 546: $display : In Beq_Done, the next_state is 0
+"control_unit.v" line 552: $display : In Jal_Execution, the next_state is 18
+"control_unit.v" line 558: $display : In Jal_Load, the next_state is 19
+"control_unit.v" line 564: $display : In Jal_Read, the next_state is 20
+"control_unit.v" line 570: $display : In Jal_ALU, the next_state is 21
+"control_unit.v" line 576: $display : In Jal_Done, the next_state is 0
+"control_unit.v" line 582: $display : In Return_Execution, the next_state is 23
+"control_unit.v" line 588: $display : In Return_ALU, the next_state is 24
+"control_unit.v" line 594: $display : In Jal_Load, the next_state is 25
+"control_unit.v" line 600: $display : In Return_Read, the next_state is 26
+WARNING:Xst:2323 - "control_unit.v" line 611: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 611: $display : In I_Execution, the next_state is %d
+"control_unit.v" line 617: $display : In  I_Write, the next_state is 0
+"control_unit.v" line 623: $display : In Lui_Execution, the next_state is 0
+"control_unit.v" line 629: $display : In Li_Execution, the next_state is 0
+"control_unit.v" line 634: $display :  Not implemented!
+WARNING:Xst:2323 - "control_unit.v" line 640: Parameter 2 is not constant in call of system task $display.
+"control_unit.v" line 640: $display : After the tests, the next_state is %d
+Module <MIPS_control_unit> is correct for synthesis.
+ 
+Analyzing module <amemory16x1k> in library <work>.
+INFO:Xst:2546 - "Block_Mem_16bits.v" line 42: reading initialization file "memory.dat".
+WARNING:Xst:2319 - "Block_Mem_16bits.v" line 42: Signal mem in initial block is partially initialized. The initialization will be ignored.
+Module <amemory16x1k> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ShiftLeftBy8>.
+    Related source file is "ShiftLeftBy8.v".
+Unit <ShiftLeftBy8> synthesized.
+
+
+Synthesizing Unit <Zero_Extended>.
+    Related source file is "Zero_Extended.v".
+Unit <Zero_Extended> synthesized.
+
+
+Synthesizing Unit <MIPS_control_unit>.
+    Related source file is "control_unit.v".
+    Found 16x5-bit ROM for signal <$old_next_state_20>.
+    Found 5-bit register for signal <current_state>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   5 D-type flip-flop(s).
+Unit <MIPS_control_unit> synthesized.
+
+
+Synthesizing Unit <amemory16x1k>.
+    Related source file is "Block_Mem_16bits.v".
+    Found 1024x16-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <amemory16x1k> synthesized.
+
+
+Synthesizing Unit <SLT>.
+    Related source file is "SLT.v".
+Unit <SLT> synthesized.
+
+
+Synthesizing Unit <FD16CE_MXILINX_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <FD16CE_MXILINX_DataPath> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_17>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_17> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_18>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_18> synthesized.
+
+
+Synthesizing Unit <fd11ce_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <fd11ce_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <FD8CE_MXILINX_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <FD8CE_MXILINX_DataPath> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_regFile16b2_1>.
+    Related source file is "regFile16b2.vf".
+Unit <FD16RE_MXILINX_regFile16b2_1> synthesized.
+
+
+Synthesizing Unit <FD16RE_MXILINX_regFile16b2_2>.
+    Related source file is "regFile16b2.vf".
+Unit <FD16RE_MXILINX_regFile16b2_2> synthesized.
+
+
+Synthesizing Unit <decode1b2>.
+    Related source file is "decode1b2.vf".
+Unit <decode1b2> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_1>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_2>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_2> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_3>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_3> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_4>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_4> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_5>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_5> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_6>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_6> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_7>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_7> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_8>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_8> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_9>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_9> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_10>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_10> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_11>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_11> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_12>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_12> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_13>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_13> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_14>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_14> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_15>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_15> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_regFile16b2_16>.
+    Related source file is "regFile16b2.vf".
+Unit <M2_1E_MXILINX_regFile16b2_16> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux16b8_1>.
+    Related source file is "mux16b8.vf".
+Unit <M2_1E_MXILINX_mux16b8_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux16b8_2>.
+    Related source file is "mux16b8.vf".
+Unit <M2_1E_MXILINX_mux16b8_2> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux16b8_3>.
+    Related source file is "mux16b8.vf".
+Unit <M2_1E_MXILINX_mux16b8_3> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_mux16b8_4>.
+    Related source file is "mux16b8.vf".
+Unit <M2_1E_MXILINX_mux16b8_4> synthesized.
+
+
+Synthesizing Unit <buf16>.
+    Related source file is "buf16.vf".
+Unit <buf16> synthesized.
+
+
+Synthesizing Unit <add1b_MUSER_alu>.
+    Related source file is "alu.vf".
+Unit <add1b_MUSER_alu> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu_1>.
+    Related source file is "alu.vf".
+Unit <M2_1E_MXILINX_alu_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu_2>.
+    Related source file is "alu.vf".
+Unit <M2_1E_MXILINX_alu_2> synthesized.
+
+
+Synthesizing Unit <fd3ce_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <fd3ce_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_1>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_2>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_2> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_3>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_3> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_4>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_4> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_5>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_5> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_6>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_6> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_7>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_7> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_8>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_8> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_9>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_9> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_10>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_10> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_11>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_11> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_12>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_12> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_13>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_13> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_14>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_14> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_15>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_15> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_DataPath_16>.
+    Related source file is "DataPath.vf".
+Unit <M2_1E_MXILINX_DataPath_16> synthesized.
+
+
+Synthesizing Unit <reg16_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <reg16_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <reg11_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <reg11_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <reg8_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <reg8_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <reg3_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <reg3_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <mux16b2_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <mux16b2_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_1>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_2>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_3>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_4>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_5>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_5> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_6>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_6> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_7>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_7> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_8>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_8> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_9>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_9> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_10>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_10> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_11>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_11> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_12>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_12> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_13>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_13> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_14>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_14> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_15>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_15> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_DataPath_16>.
+    Related source file is "DataPath.vf".
+Unit <M4_1E_MXILINX_DataPath_16> synthesized.
+
+
+Synthesizing Unit <mux16b2_MUSER_regFile16b2>.
+    Related source file is "regFile16b2.vf".
+Unit <mux16b2_MUSER_regFile16b2> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_1>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_1> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_2>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_2> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_3>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_3> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_4>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_4> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_5>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_5> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_6>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_6> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_7>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_7> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_8>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_8> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_9>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_9> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_10>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_10> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_11>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_11> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_12>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_12> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_13>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_13> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_14>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_14> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_15>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_15> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_mux16b8_16>.
+    Related source file is "mux16b8.vf".
+Unit <M8_1E_MXILINX_mux16b8_16> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_alu>.
+    Related source file is "alu.vf".
+Unit <M4_1E_MXILINX_alu> synthesized.
+
+
+Synthesizing Unit <mux4b16_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <mux4b16_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <regFile16b2>.
+    Related source file is "regFile16b2.vf".
+Unit <regFile16b2> synthesized.
+
+
+Synthesizing Unit <mux16b8>.
+    Related source file is "mux16b8.vf".
+Unit <mux16b8> synthesized.
+
+
+Synthesizing Unit <Sign_Extended_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+WARNING:Xst:1305 - Output <Output> is never assigned. Tied to value 0000000000000000.
+Unit <Sign_Extended_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <Sign_Extended_8bits_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <Sign_Extended_8bits_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <Sign_Extended_3bits_MUSER_DataPath>.
+    Related source file is "DataPath.vf".
+Unit <Sign_Extended_3bits_MUSER_DataPath> synthesized.
+
+
+Synthesizing Unit <alu1b_MUSER_alu>.
+    Related source file is "alu.vf".
+Unit <alu1b_MUSER_alu> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.vf".
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <DataPath>.
+    Related source file is "DataPath.vf".
+WARNING:Xst:646 - Signal <AddressOut<15:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <DataPath> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x16-bit single-port RAM                           : 1
+# ROMs                                                 : 1
+ 16x5-bit ROM                                          : 1
+# Registers                                            : 1
+ 5-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <amemory16x1k>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <Write>         | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    |     doA            | connected to signal <DataOut>       |          |
+    -----------------------------------------------------------------------
+Unit <amemory16x1k> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x16-bit single-port distributed RAM               : 1
+# ROMs                                                 : 1
+ 16x5-bit ROM                                          : 1
+# Registers                                            : 139
+ Flip-Flops                                            : 139
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<2>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<1>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<0>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<4>.
+WARNING:Xst:2170 - Unit MIPS_control_unit : the following signal(s) form a combinatorial loop: next_state<3>.
+
+Optimizing unit <DataPath> ...
+
+Optimizing unit <MIPS_control_unit> ...
+
+Optimizing unit <FD16CE_MXILINX_DataPath> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_17> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_18> ...
+
+Optimizing unit <fd11ce_MUSER_DataPath> ...
+
+Optimizing unit <FD8CE_MXILINX_DataPath> ...
+
+Optimizing unit <FD16RE_MXILINX_regFile16b2_1> ...
+
+Optimizing unit <FD16RE_MXILINX_regFile16b2_2> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_1> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_2> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_3> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_4> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_5> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_6> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_7> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_8> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_9> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_10> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_11> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_12> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_13> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_14> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_15> ...
+
+Optimizing unit <M2_1E_MXILINX_regFile16b2_16> ...
+
+Optimizing unit <M2_1E_MXILINX_mux16b8_1> ...
+
+Optimizing unit <M2_1E_MXILINX_mux16b8_2> ...
+
+Optimizing unit <M2_1E_MXILINX_mux16b8_3> ...
+
+Optimizing unit <M2_1E_MXILINX_mux16b8_4> ...
+
+Optimizing unit <buf16> ...
+
+Optimizing unit <add1b_MUSER_alu> ...
+
+Optimizing unit <M2_1E_MXILINX_alu_1> ...
+
+Optimizing unit <M2_1E_MXILINX_alu_2> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_1> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_2> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_3> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_4> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_5> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_6> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_7> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_8> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_9> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_10> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_11> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_12> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_13> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_14> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_15> ...
+
+Optimizing unit <M2_1E_MXILINX_DataPath_16> ...
+
+Optimizing unit <mux16b2_MUSER_DataPath> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_1> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_2> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_3> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_4> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_5> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_6> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_7> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_8> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_9> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_10> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_11> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_12> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_13> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_14> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_15> ...
+
+Optimizing unit <M4_1E_MXILINX_DataPath_16> ...
+
+Optimizing unit <mux16b2_MUSER_regFile16b2> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_1> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_2> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_3> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_4> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_5> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_6> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_7> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_8> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_9> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_10> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_11> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_12> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_13> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_14> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_15> ...
+
+Optimizing unit <M8_1E_MXILINX_mux16b8_16> ...
+
+Optimizing unit <M4_1E_MXILINX_alu> ...
+
+Optimizing unit <mux4b16_MUSER_DataPath> ...
+
+Optimizing unit <mux16b8> ...
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DataPath, actual ratio is 20.
+INFO:Xst:2260 - The FF/Latch <XLXI_35/XLXI_13/I_Q8> in Unit <DataPath> is equivalent to the following FF/Latch : <XLXI_14/XLXI_7/I_Q14> 
+INFO:Xst:2260 - The FF/Latch <XLXI_35/XLXI_13/I_Q15> in Unit <DataPath> is equivalent to the following FF/Latch : <XLXI_14/XLXI_7/I_Q15> 
+INFO:Xst:2260 - The FF/Latch <XLXI_35/XLXI_13/I_Q0> in Unit <DataPath> is equivalent to the following FF/Latch : <XLXI_14/XLXI_7/I_Q13> 
+FlipFlop XLXI_52/current_state_0 has been replicated 1 time(s)
+FlipFlop XLXI_52/current_state_1 has been replicated 1 time(s)
+FlipFlop XLXI_52/current_state_2 has been replicated 1 time(s)
+FlipFlop XLXI_52/current_state_3 has been replicated 1 time(s)
+FlipFlop XLXI_52/current_state_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 144
+ Flip-Flops                                            : 144
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DataPath.ngr
+Top Level Output File Name         : DataPath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 2304
+#      AND2                        : 70
+#      AND2B1                      : 32
+#      AND3                        : 386
+#      AND3B1                      : 368
+#      AND3B2                      : 48
+#      AND4                        : 1
+#      AND4B4                      : 4
+#      BUF                         : 112
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 15
+#      LUT3                        : 272
+#      LUT4                        : 123
+#      LUT4_L                      : 2
+#      MUXF5                       : 221
+#      MUXF5_L                     : 64
+#      MUXF6                       : 96
+#      MUXF7                       : 32
+#      MUXF8                       : 16
+#      OR2                         : 404
+#      OR3                         : 16
+#      OR4                         : 16
+#      VCC                         : 1
+#      XOR2                        : 1
+# FlipFlops/Latches                : 144
+#      FDC                         : 10
+#      FDCE                        : 102
+#      FDRE                        : 32
+# RAMS                             : 512
+#      RAM32X1S                    : 512
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 1
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      720  out of   4656    15%  
+ Number of Slice Flip Flops:            144  out of   9312     1%  
+ Number of 4 input LUTs:               1439  out of   9312    15%  
+    Number used as logic:               415
+    Number used as RAMs:               1024
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 656   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------+-------+
+Control Signal                     | Buffer(FF name)              | Load  |
+-----------------------------------+------------------------------+-------+
+XLXI_51/G(XLXI_51/XLXI_2:G)        | NONE(XLXI_12/XLXI_2/I_Q0)    | 102   |
+XLXN_191(XLXI_55:O)                | NONE(XLXI_52/current_state_0)| 10    |
+-----------------------------------+------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 60.116ns (Maximum Frequency: 16.635MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 14.886ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 60.116ns (frequency: 16.635MHz)
+  Total number of paths / destination ports: 4683559222 / 3808
+-------------------------------------------------------------------------
+Delay:               60.116ns (Levels of Logic = 55)
+  Source:            XLXI_16/XLXI_4/I_Q0 (FF)
+  Destination:       XLXI_7/XLXI_2/I_Q0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_16/XLXI_4/I_Q0 to XLXI_7/XLXI_2/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  I_Q0 (Q<0>)
+     end scope: 'XLXI_16/XLXI_4'
+     BUF:I->O              1   0.704   0.420  XLXI_49/XLXI_12/XLXI_16 (XLXI_49/XLXN_14<0>)
+     begin scope: 'XLXI_49/XLXI_14/XLXI_4'
+     AND3B1:I2->O          1   0.704   0.420  I_36_31 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_38 (O)
+     end scope: 'XLXI_49/XLXI_14/XLXI_4'
+     begin scope: 'XLXI_42/XLXI_87'
+     begin scope: 'I_M23'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           4   0.321   0.587  I_O (O)
+     end scope: 'XLXI_42/XLXI_87'
+     AND2B1:I0->O          1   0.704   0.420  XLXI_29/XLXI_6/XLXI_8 (XLXI_29/XLXI_6/XLXN_59)
+     OR2:I1->O             6   0.704   0.669  XLXI_29/XLXI_6/XLXI_10 (XLXI_29/XLXI_6/XLXN_41)
+     AND2:I0->O            1   0.704   0.420  XLXI_29/XLXI_6/XLXI_3/XLXI_11 (XLXI_29/XLXI_6/XLXI_3/XLXN_14)
+     OR3:I1->O             6   0.704   0.669  XLXI_29/XLXI_6/XLXI_3/XLXI_5 (XLXI_29/XLXN_18)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_7/XLXI_3/XLXI_10 (XLXI_29/XLXI_7/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_7/XLXI_3/XLXI_5 (XLXI_29/XLXN_19)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_8/XLXI_3/XLXI_10 (XLXI_29/XLXI_8/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_8/XLXI_3/XLXI_5 (XLXI_29/XLXN_221)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_9/XLXI_3/XLXI_10 (XLXI_29/XLXI_9/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_9/XLXI_3/XLXI_5 (XLXI_29/XLXN_222)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_44/XLXI_3/XLXI_10 (XLXI_29/XLXI_44/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_44/XLXI_3/XLXI_5 (XLXI_29/XLXN_145)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_45/XLXI_3/XLXI_10 (XLXI_29/XLXI_45/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_45/XLXI_3/XLXI_5 (XLXI_29/XLXN_149)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_46/XLXI_3/XLXI_10 (XLXI_29/XLXI_46/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_46/XLXI_3/XLXI_5 (XLXI_29/XLXN_158)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_47/XLXI_3/XLXI_10 (XLXI_29/XLXI_47/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_47/XLXI_3/XLXI_5 (XLXI_29/XLXN_162)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_48/XLXI_3/XLXI_10 (XLXI_29/XLXI_48/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_48/XLXI_3/XLXI_5 (XLXI_29/XLXN_166)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_49/XLXI_3/XLXI_10 (XLXI_29/XLXI_49/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_49/XLXI_3/XLXI_5 (XLXI_29/XLXN_170)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_50/XLXI_3/XLXI_10 (XLXI_29/XLXI_50/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_50/XLXI_3/XLXI_5 (XLXI_29/XLXN_174)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_51/XLXI_3/XLXI_10 (XLXI_29/XLXI_51/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_51/XLXI_3/XLXI_5 (XLXI_29/XLXN_199)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_52/XLXI_3/XLXI_10 (XLXI_29/XLXI_52/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_52/XLXI_3/XLXI_5 (XLXI_29/XLXN_203)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_53/XLXI_3/XLXI_10 (XLXI_29/XLXI_53/XLXI_3/XLXN_13)
+     OR3:I2->O             6   0.704   0.669  XLXI_29/XLXI_53/XLXI_3/XLXI_5 (XLXI_29/XLXN_207)
+     AND2:I1->O            1   0.704   0.420  XLXI_29/XLXI_54/XLXI_3/XLXI_10 (XLXI_29/XLXI_54/XLXI_3/XLXN_13)
+     OR3:I2->O             7   0.704   0.708  XLXI_29/XLXI_54/XLXI_3/XLXI_5 (XLXI_29/XLXN_223)
+     AND3B2:I0->O          1   0.704   0.420  XLXI_29/XLXI_55/XLXI_3/XLXI_2 (XLXI_29/XLXI_55/XLXI_3/XLXN_3)
+     OR4:I2->O             2   0.704   0.447  XLXI_29/XLXI_55/XLXI_3/XLXI_1 (XLXI_29/XLXN_253)
+     begin scope: 'XLXI_29/XLXI_6/XLXI_4'
+     begin scope: 'I_M23'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5:I1->O           3   0.321   0.531  I_O (O)
+     end scope: 'XLXI_29/XLXI_6/XLXI_4'
+     AND4B4:I3->O          1   0.704   0.420  XLXI_29/XLXI_32 (XLXI_29/XLXN_247)
+     AND4:I3->O            2   0.704   0.447  XLXI_29/XLXI_59 (XLXN_99)
+     INV:I->O              1   0.704   0.420  XLXI_3 (XLXN_3)
+     AND2:I1->O            1   0.704   0.420  XLXI_4 (XLXN_6)
+     OR2:I0->O             1   0.704   0.420  XLXI_5 (XLXN_9)
+     OR2:I1->O            16   0.704   1.034  XLXI_6 (XLXN_11)
+     begin scope: 'XLXI_7/XLXI_2'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                     60.116ns (34.876ns logic, 25.240ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 418 / 10
+-------------------------------------------------------------------------
+Offset:              14.886ns (Levels of Logic = 9)
+  Source:            XLXI_52/current_state_0 (FF)
+  Destination:       NS<1> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_52/current_state_0 to NS<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.591   1.435  XLXI_52/current_state_0 (XLXI_52/current_state_0)
+     LUT2:I0->O            5   0.704   0.712  XLXI_52/RegWrite_cmp_eq000811 (XLXI_52/N12)
+     LUT4:I1->O           10   0.704   1.057  XLXI_52/ALUOp_cmp_eq00071 (XLXI_52/ALUOp_cmp_eq0007)
+     LUT4:I0->O            1   0.704   0.000  XLXI_52/_old_next_state_24<2>51 (XLXI_52/_old_next_state_24<2>5)
+     MUXF5:I1->O           2   0.321   0.482  XLXI_52/_old_next_state_24<2>5_f5 (XLXI_52/N31)
+     LUT4:I2->O            2   0.704   0.482  XLXI_52/_old_next_state_24<0>1 (XLXI_52/N4)
+     LUT4:I2->O            1   0.704   0.424  XLXI_52/_old_next_state_24<1>88_SW0 (N681)
+     LUT4:I3->O            1   0.704   0.595  XLXI_52/_old_next_state_24<1>88 (XLXI_52/_old_next_state_24<1>88)
+     LUT2:I0->O            4   0.704   0.587  XLXI_52/_old_next_state_24<1>102 (NS_1_OBUF)
+     OBUF:I->O                 3.272          NS_1_OBUF (NS<1>)
+    ----------------------------------------
+    Total                     14.886ns (9.112ns logic, 5.774ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.36 secs
+ 
+--> 
+
+Total memory usage is 314540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

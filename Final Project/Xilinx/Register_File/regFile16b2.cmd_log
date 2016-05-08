@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan3e -refsym regFile16b2 D:/components/Register_File/regFile16b2.sch D:/components/Register_File/regFile16b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym regFile16b2 D:/components/Register_File/regFile16b2.sch D:/components/Register_File/regFile16b2.sym 
+xst -intstyle ise -ifn "D:/components/Register_File/regFile16b2.xst" -ofn "D:/components/Register_File/regFile16b2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 regFile16b2.ngc regFile16b2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o regFile16b2_map.ncd regFile16b2.ngd regFile16b2.pcf 
+par -w -intstyle ise -ol high -t 1 regFile16b2_map.ncd regFile16b2.ncd regFile16b2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml regFile16b2.twx regFile16b2.ncd -o regFile16b2.twr regFile16b2.pcf 

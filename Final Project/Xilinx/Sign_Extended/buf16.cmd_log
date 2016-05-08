@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym buf16 D:/constant16b0001/buf16.sch D:/components/Zero_Extended/Sign_Extended/buf16.sym 
+sch2sym -intstyle ise -family spartan3e -refsym buf16 D:/constant16b0001/buf16.sch D:/components/Zero_Extended/Sign_Extended/buf16.sym 

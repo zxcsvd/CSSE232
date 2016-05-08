@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog decode1b2_drc.vf -w D:/components/Register_File/regEXE/decode1b2.sch 
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 
+sch2sym -intstyle ise -family spartan3e -refsym decode1b2 D:/components/Register_File/regEXE/decode1b2.sch D:/components/Register_File/decode1b2.sym 

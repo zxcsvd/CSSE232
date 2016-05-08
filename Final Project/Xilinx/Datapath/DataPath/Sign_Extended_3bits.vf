@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sign_Extended_3bits.vf
+// /___/   /\     Timestamp : 11/12/2014 14:27:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Datapath/DataPath/Sign_Extended_3bits.vf -w D:/Datapath/DataPath/Sign_Extended_3bits.sch
+//Design Name: Sign_Extended_3bits
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Sign_Extended_3bits(Input, 
+                           Output);
+
+    input [2:0] Input;
+   output [15:0] Output;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_14;
+   wire [15:0] XLXN_15;
+   
+   VCC  XLXI_1 (.P(V));
+   GND  XLXI_2 (.G(G));
+   buf16  XLXI_12 (.I({G, G, G, G, G, G, G, G, G, G, G, G, G, Input[2:0]}), 
+                  .O(XLXN_14[15:0]));
+   buf16  XLXI_13 (.I({V, V, V, V, V, V, V, V, V, V, V, V, V, Input[2:0]}), 
+                  .O(XLXN_15[15:0]));
+   mux16b2  XLXI_14 (.A(XLXN_14[15:0]), 
+                    .B(XLXN_15[15:0]), 
+                    .S(Input[2]), 
+                    .O(Output[15:0]));
+endmodule

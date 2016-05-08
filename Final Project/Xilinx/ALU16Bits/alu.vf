@@ -1,0 +1,458 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : alu.vf
+// /___/   /\     Timestamp : 11/04/2014 19:24:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/components/ALU16Bits/alu.vf -w D:/components/ALU16Bits/alu.sch
+//Design Name: alu
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_alu(D0, 
+                         D1, 
+                         E, 
+                         S0, 
+                         O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_alu(D0, 
+                         D1, 
+                         D2, 
+                         D3, 
+                         E, 
+                         S0, 
+                         S1, 
+                         O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_alu  I_M01 (.D0(D0), 
+                            .D1(D1), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_alu  I_M23 (.D0(D2), 
+                            .D1(D3), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module add1b_MUSER_alu(a, 
+                       b, 
+                       ci, 
+                       co, 
+                       r);
+
+    input a;
+    input b;
+    input ci;
+   output co;
+   output r;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   OR4  XLXI_1 (.I0(XLXN_6), 
+               .I1(XLXN_4), 
+               .I2(XLXN_3), 
+               .I3(XLXN_5), 
+               .O(r));
+   AND3B2  XLXI_2 (.I0(ci), 
+                  .I1(b), 
+                  .I2(a), 
+                  .O(XLXN_3));
+   AND3B2  XLXI_3 (.I0(ci), 
+                  .I1(a), 
+                  .I2(b), 
+                  .O(XLXN_4));
+   AND3  XLXI_4 (.I0(ci), 
+                .I1(b), 
+                .I2(a), 
+                .O(XLXN_6));
+   OR3  XLXI_5 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .O(co));
+   AND2  XLXI_10 (.I0(a), 
+                 .I1(ci), 
+                 .O(XLXN_13));
+   AND2  XLXI_11 (.I0(b), 
+                 .I1(ci), 
+                 .O(XLXN_14));
+   AND2  XLXI_12 (.I0(b), 
+                 .I1(a), 
+                 .O(XLXN_15));
+   AND3B2  XLXI_13 (.I0(b), 
+                   .I1(a), 
+                   .I2(ci), 
+                   .O(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module alu1b_MUSER_alu(a, 
+                       b, 
+                       ci, 
+                       Less, 
+                       op, 
+                       co, 
+                       r, 
+                       Set);
+
+    input a;
+    input b;
+    input ci;
+    input Less;
+    input [2:0] op;
+   output co;
+   output r;
+   output Set;
+   
+   wire XLXN_8;
+   wire XLXN_17;
+   wire XLXN_25;
+   wire XLXN_41;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire Set_DUMMY;
+   
+   assign Set = Set_DUMMY;
+   AND2  XLXI_1 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_8));
+   OR2  XLXI_2 (.I0(b), 
+               .I1(a), 
+               .O(XLXN_17));
+   add1b_MUSER_alu  XLXI_3 (.a(a), 
+                           .b(XLXN_41), 
+                           .ci(ci), 
+                           .co(co), 
+                           .r(Set_DUMMY));
+   (* HU_SET = "XLXI_4_2" *) 
+   M4_1E_MXILINX_alu  XLXI_4 (.D0(XLXN_8), 
+                             .D1(XLXN_17), 
+                             .D2(Set_DUMMY), 
+                             .D3(Less), 
+                             .E(XLXN_25), 
+                             .S0(op[0]), 
+                             .S1(op[1]), 
+                             .O(r));
+   VCC  XLXI_5 (.P(XLXN_25));
+   AND2B1  XLXI_8 (.I0(b), 
+                  .I1(op[2]), 
+                  .O(XLXN_59));
+   AND2B1  XLXI_9 (.I0(op[2]), 
+                  .I1(b), 
+                  .O(XLXN_60));
+   OR2  XLXI_10 (.I0(XLXN_60), 
+                .I1(XLXN_59), 
+                .O(XLXN_41));
+endmodule
+`timescale 1ns / 1ps
+
+module alu(a, 
+           b, 
+           op, 
+           co, 
+           overflow, 
+           Result, 
+           zero);
+
+    input [15:0] a;
+    input [15:0] b;
+    input [2:0] op;
+   output co;
+   output overflow;
+   output [15:0] Result;
+   output zero;
+   
+   wire Result0;
+   wire Result1;
+   wire Result2;
+   wire Result3;
+   wire Result4;
+   wire Result5;
+   wire Result6;
+   wire Result7;
+   wire Result8;
+   wire Result9;
+   wire Result00;
+   wire Result10;
+   wire Result11;
+   wire Result12;
+   wire Result13;
+   wire Result14;
+   wire Result15;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_57;
+   wire XLXN_104;
+   wire XLXN_106;
+   wire XLXN_119;
+   wire XLXN_123;
+   wire XLXN_134;
+   wire XLXN_135;
+   wire XLXN_145;
+   wire XLXN_149;
+   wire XLXN_158;
+   wire XLXN_162;
+   wire XLXN_166;
+   wire XLXN_170;
+   wire XLXN_174;
+   wire XLXN_199;
+   wire XLXN_203;
+   wire XLXN_207;
+   wire XLXN_221;
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_247;
+   wire XLXN_248;
+   wire XLXN_249;
+   wire XLXN_250;
+   wire XLXN_253;
+   wire co_DUMMY;
+   wire overflow_DUMMY;
+   
+   assign co = co_DUMMY;
+   assign overflow = overflow_DUMMY;
+   alu1b_MUSER_alu  XLXI_6 (.a(a[0]), 
+                           .b(b[0]), 
+                           .ci(op[2]), 
+                           .Less(XLXN_253), 
+                           .op(op[2:0]), 
+                           .co(XLXN_18), 
+                           .r(Result00), 
+                           .Set());
+   alu1b_MUSER_alu  XLXI_7 (.a(a[1]), 
+                           .b(b[1]), 
+                           .ci(XLXN_18), 
+                           .Less(XLXN_57), 
+                           .op(op[2:0]), 
+                           .co(XLXN_19), 
+                           .r(Result1), 
+                           .Set());
+   alu1b_MUSER_alu  XLXI_8 (.a(a[2]), 
+                           .b(b[2]), 
+                           .ci(XLXN_19), 
+                           .Less(XLXN_57), 
+                           .op(op[2:0]), 
+                           .co(XLXN_221), 
+                           .r(Result2), 
+                           .Set());
+   alu1b_MUSER_alu  XLXI_9 (.a(a[3]), 
+                           .b(b[3]), 
+                           .ci(XLXN_221), 
+                           .Less(XLXN_57), 
+                           .op(op[2:0]), 
+                           .co(XLXN_222), 
+                           .r(Result3), 
+                           .Set());
+   GND  XLXI_31 (.G(XLXN_57));
+   AND4B4  XLXI_32 (.I0(Result3), 
+                   .I1(Result2), 
+                   .I2(Result1), 
+                   .I3(Result00), 
+                   .O(XLXN_247));
+   XOR2  XLXI_33 (.I0(XLXN_223), 
+                 .I1(co_DUMMY), 
+                 .O(overflow_DUMMY));
+   SLT  XLXI_34 (.a(a[15]), 
+                .overflow(overflow_DUMMY), 
+                .r(Result00), 
+                .out1(XLXN_123));
+   AND3  XLXI_37 (.I0(op[2]), 
+                 .I1(op[1]), 
+                 .I2(op[0]), 
+                 .O(XLXN_104));
+   AND2  XLXI_38 (.I0(XLXN_123), 
+                 .I1(XLXN_104), 
+                 .O(XLXN_106));
+   OR2  XLXI_39 (.I0(XLXN_119), 
+                .I1(XLXN_106), 
+                .O(Result0));
+   AND3  XLXI_40 (.I0(op[2]), 
+                 .I1(op[1]), 
+                 .I2(op[0]), 
+                 .O(XLXN_135));
+   AND2  XLXI_41 (.I0(Result00), 
+                 .I1(XLXN_134), 
+                 .O(XLXN_119));
+   INV  XLXI_43 (.I(XLXN_135), 
+                .O(XLXN_134));
+   alu1b_MUSER_alu  XLXI_44 (.a(a[4]), 
+                            .b(b[4]), 
+                            .ci(XLXN_222), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_145), 
+                            .r(Result4), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_45 (.a(a[5]), 
+                            .b(b[5]), 
+                            .ci(XLXN_145), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_149), 
+                            .r(Result5), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_46 (.a(a[6]), 
+                            .b(b[6]), 
+                            .ci(XLXN_149), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_158), 
+                            .r(Result6), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_47 (.a(a[7]), 
+                            .b(b[7]), 
+                            .ci(XLXN_158), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_162), 
+                            .r(Result7), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_48 (.a(a[8]), 
+                            .b(b[8]), 
+                            .ci(XLXN_162), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_166), 
+                            .r(Result8), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_49 (.a(a[9]), 
+                            .b(b[9]), 
+                            .ci(XLXN_166), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_170), 
+                            .r(Result9), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_50 (.a(a[10]), 
+                            .b(b[10]), 
+                            .ci(XLXN_170), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_174), 
+                            .r(Result10), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_51 (.a(a[11]), 
+                            .b(b[11]), 
+                            .ci(XLXN_174), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_199), 
+                            .r(Result11), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_52 (.a(a[12]), 
+                            .b(b[12]), 
+                            .ci(XLXN_199), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_203), 
+                            .r(Result12), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_53 (.a(a[13]), 
+                            .b(b[13]), 
+                            .ci(XLXN_203), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_207), 
+                            .r(Result13), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_54 (.a(a[14]), 
+                            .b(b[14]), 
+                            .ci(XLXN_207), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(XLXN_223), 
+                            .r(Result14), 
+                            .Set());
+   alu1b_MUSER_alu  XLXI_55 (.a(a[15]), 
+                            .b(b[15]), 
+                            .ci(XLXN_223), 
+                            .Less(XLXN_57), 
+                            .op(op[2:0]), 
+                            .co(co_DUMMY), 
+                            .r(Result15), 
+                            .Set(XLXN_253));
+   AND4B4  XLXI_56 (.I0(Result7), 
+                   .I1(Result6), 
+                   .I2(Result5), 
+                   .I3(Result4), 
+                   .O(XLXN_248));
+   AND4B4  XLXI_57 (.I0(Result11), 
+                   .I1(Result10), 
+                   .I2(Result9), 
+                   .I3(Result8), 
+                   .O(XLXN_249));
+   AND4B4  XLXI_58 (.I0(Result15), 
+                   .I1(Result14), 
+                   .I2(Result13), 
+                   .I3(Result12), 
+                   .O(XLXN_250));
+   AND4  XLXI_59 (.I0(XLXN_250), 
+                 .I1(XLXN_249), 
+                 .I2(XLXN_248), 
+                 .I3(XLXN_247), 
+                 .O(zero));
+   buf16  XLXI_61 (.I({Result15, Result14, Result13, Result12, Result11, 
+         Result10, Result9, Result8, Result7, Result6, Result5, Result4, 
+         Result3, Result2, Result1, Result0}), 
+                  .O(Result[15:0]));
+endmodule

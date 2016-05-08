@@ -1,0 +1,24 @@
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl /home/zxqdx/csse132/lab04/alu/Merge.sym 
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl /home/zxqdx/csse132/lab04/alu/Merge.sym 
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl /home/zxqdx/csse132/lab04/alu/Merge.sym 
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl /home/zxqdx/csse132/lab04/alu/Merge.sym 
+vhdtdtfi -lib work /home/zxqdx/csse132/lab04/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl /home/zxqdx/csse132/lab04/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 
+vhdtdtfi -lib work D:/alu/Merge.v -lang verilog -prj alu -o Merge.spl -module Merge -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Merge.spl D:/alu/Merge.sym 

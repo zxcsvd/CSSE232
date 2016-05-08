@@ -1,0 +1,29 @@
+Command line:
+   Sign_Extended_Sign_Extended_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54552
+
+Tue Nov 04 19:43:22 2014
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 505.029 Meg
+
+ Total Signals          : 400
+ Total Nets             : 155
+ Total Signal Drivers   : 107
+ Total Blocks           : 105
+ Total Primitive Blocks : 84
+ Total Processes        : 109
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 246
+Total Line Count : 22
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 505.029 Meg
+
+Tue Nov 04 19:43:38 2014
+

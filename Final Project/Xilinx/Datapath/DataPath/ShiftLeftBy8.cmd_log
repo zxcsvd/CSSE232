@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/components/ShiftLeft8/Shift_Left_8bits/ShiftLeftBy8.v -lang verilog -prj DataPath -o ShiftLeftBy8.spl -module ShiftLeftBy8 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ShiftLeftBy8.spl D:/Datapath/DataPath/ShiftLeftBy8.sym 

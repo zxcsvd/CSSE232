@@ -1,0 +1,29 @@
+Command line:
+   Zero_Extended_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54517
+
+Tue Nov 04 19:39:55 2014
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 505.029 Meg
+
+ Total Signals          : 14
+ Total Nets             : 40
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 136
+Total Line Count : 17
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 505.029 Meg
+
+Tue Nov 04 19:40:00 2014
+

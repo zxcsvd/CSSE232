@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym buf16 {D:/interrupt register/buf16.sch} D:/components/ALU16Bits/buf16.sym 

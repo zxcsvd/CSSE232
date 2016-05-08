@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym reg8 D:/components/8_Bits_Reg/reg8.sch D:/Datapath/DataPath/reg8.sym 

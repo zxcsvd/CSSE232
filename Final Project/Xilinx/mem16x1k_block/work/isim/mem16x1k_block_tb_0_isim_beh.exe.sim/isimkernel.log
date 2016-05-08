@@ -1,0 +1,28 @@
+Command line:
+   mem16x1k_block_tb_0_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54410
+
+Tue Nov 04 19:31:07 2014
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 505.102 Meg
+
+ Total Signals          : 109
+ Total Nets             : 299
+ Total Signal Drivers   : 60
+ Total Blocks           : 17
+ Total Primitive Blocks : 13
+ Total Processes        : 74
+ Total Traceable Variables  : 319
+ Total Scalar Nets and Variables : 37413
+
+ Total Simulation Time: 0.1092 sec
+
+ Current Memory Usage: 505.102 Meg
+
+Tue Nov 04 19:31:43 2014
+

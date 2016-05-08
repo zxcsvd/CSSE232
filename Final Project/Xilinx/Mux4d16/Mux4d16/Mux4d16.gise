@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Mux4d16.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mux4b16.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mux4b16.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="mux4b16.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mux4b16.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mux4b16.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mux4b16.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mux4b16.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mux4b16.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mux4b16.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mux4b16.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mux4b16.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux4b16.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mux4b16.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux4b16.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mux4b16.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mux4b16.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mux4b16.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mux4b16.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux4b16.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mux4b16.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mux4b16.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mux4b16_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mux4b16_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mux4b16_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mux4b16_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mux4b16_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mux4b16_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux4b16_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux4b16_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mux4b16_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mux4b16_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux4b16_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mux4b16_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mux4b16_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mux4b16_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux4b16_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1415173534" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1415173534">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173719" xil_pn:in_ck="172543366809393827" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3040162022493811145" xil_pn:start_ts="1415173716">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="mux4b16.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173537" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5302916533273676554" xil_pn:start_ts="1415173537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173537" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1415173537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173537" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7394713506400648889" xil_pn:start_ts="1415173537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173537" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1415173537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173537" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3699844778678737088" xil_pn:start_ts="1415173537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173725" xil_pn:in_ck="5228586873012033" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2794494781664574282" xil_pn:start_ts="1415173719">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mux4b16.jhd"/>
+      <outfile xil_pn:name="mux4b16.lso"/>
+      <outfile xil_pn:name="mux4b16.ngc"/>
+      <outfile xil_pn:name="mux4b16.ngr"/>
+      <outfile xil_pn:name="mux4b16.prj"/>
+      <outfile xil_pn:name="mux4b16.stx"/>
+      <outfile xil_pn:name="mux4b16.syr"/>
+      <outfile xil_pn:name="mux4b16.xst"/>
+      <outfile xil_pn:name="mux4b16_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173543" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981275438270617" xil_pn:start_ts="1415173543">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173730" xil_pn:in_ck="172543366809388509" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4230725025584289241" xil_pn:start_ts="1415173725">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mux4b16.bld"/>
+      <outfile xil_pn:name="mux4b16.ngd"/>
+      <outfile xil_pn:name="mux4b16_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173734" xil_pn:in_ck="172543366809388510" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1415173730">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mux4b16.pcf"/>
+      <outfile xil_pn:name="mux4b16_map.map"/>
+      <outfile xil_pn:name="mux4b16_map.mrp"/>
+      <outfile xil_pn:name="mux4b16_map.ncd"/>
+      <outfile xil_pn:name="mux4b16_map.ngm"/>
+      <outfile xil_pn:name="mux4b16_map.xrpt"/>
+      <outfile xil_pn:name="mux4b16_summary.xml"/>
+      <outfile xil_pn:name="mux4b16_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173744" xil_pn:in_ck="-6929897616431475721" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1415173734">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mux4b16.ncd"/>
+      <outfile xil_pn:name="mux4b16.pad"/>
+      <outfile xil_pn:name="mux4b16.par"/>
+      <outfile xil_pn:name="mux4b16.ptwx"/>
+      <outfile xil_pn:name="mux4b16.unroutes"/>
+      <outfile xil_pn:name="mux4b16.xpi"/>
+      <outfile xil_pn:name="mux4b16_pad.csv"/>
+      <outfile xil_pn:name="mux4b16_pad.txt"/>
+      <outfile xil_pn:name="mux4b16_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1415173744" xil_pn:in_ck="172543366809388378" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1415173741">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mux4b16.twr"/>
+      <outfile xil_pn:name="mux4b16.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

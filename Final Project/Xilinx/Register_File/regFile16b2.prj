@@ -1,0 +1,3 @@
+verilog work "decode1b2.vf"
+verilog work "mux16b2.vf"
+verilog work "regFile16b2.vf"

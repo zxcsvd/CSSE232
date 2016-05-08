@@ -1,0 +1,201 @@
+ISim log file
+Running: D:\components\Control_Unit\Control_Unit\control_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/components/Control_Unit/Control_Unit/control_tb_isim_beh.wdb 
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+The current state is  x
+ Not implemented!
+After the tests, the next_state is  0
+Finished circuit initialization process.
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+In instruction  0, state  0, all signals go well
+The current state is  1
+The opcode is  0
+The next state is R_Execution
+In Decode, the next_state is  2
+After the tests, the next_state is  2
+In instruction  0, state  1, all signals go well
+The current state is  2
+In R_Exec, the next_state is  3
+After the tests, the next_state is  3
+In instruction  0, state  2, all signals go well
+The current state is  3
+In R_Write, the next_state is  0
+After the tests, the next_state is  0
+In instruction  0, state  3, all signals go well
+The current state is  3
+In R_Write, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+In instruction  6, state  0, all signals go well
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+In instruction  6, state  1, all signals go well
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4
+The current state is  4
+In Address, the next_state is  6
+After the tests, the next_state is  6
+The current state is  6
+In SW_Done, the next_state is  0
+After the tests, the next_state is  0
+The current state is  0
+In Fetch, the next_state is  1
+After the tests, the next_state is  1
+The current state is  1
+The opcode is  6
+The next state is Address
+In Decode, the next_state is  4
+After the tests, the next_state is  4

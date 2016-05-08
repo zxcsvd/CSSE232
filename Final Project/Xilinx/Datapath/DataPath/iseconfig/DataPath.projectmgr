@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="DataPath" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_14 - reg11</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_16 - reg8</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_21 - regFile16b2</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_25 - Sign_Extended</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_44 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_45 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_46 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_47 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_48 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_49 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_50 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_51 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_52 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_53 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_54 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_55 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_6 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_7 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_8 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_29 - alu/XLXI_9 - alu1b</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_35 - reg3</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_45 - Sign_Extended_3bits</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_46 - Sign_Extended_8bits</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_49 - Sign_Extended_8bits</ClosedNode>
+         <ClosedNode>/DataPath D:|Datapath|DataPath|DataPath.sch/XLXI_51 - Sign_Extended_3bits</ClosedNode>
+         <ClosedNode>/Sign_Extended D:|components|Sign_Extended|Sign_Extended.sch</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch</ClosedNode>
+         <ClosedNode>/reg11 D:|components|11_Bits_Reg|reg11.sch</ClosedNode>
+         <ClosedNode>/regFile16b2 D:|components|Register_File|regFile16b2.sch</ClosedNode>
+         <ClosedNode>/regFile16b8 D:|Datapath|regFile16b8.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>XLXI_52 - MIPS_control_unit (D:/Datapath/DataPath/control_unit.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >16</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>XLXI_52 - MIPS_control_unit (D:/Datapath/DataPath/control_unit.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008200000001000000000000005a00000001000000000000007800000001000000000000023e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>add1b.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000ac0000008801000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Con_T D:|Datapath|DataPath|Con_T.v</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_14 - reg11</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_16 - reg8</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_21 - regFile16b2</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_25 - Sign_Extended</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_29 - alu</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_35 - reg3</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_49 - Sign_Extended_8bits</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|DatapathTest.v/UUT - DataPath/XLXI_51 - Sign_Extended_3bits</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_14 - reg11</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_16 - reg8</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_21 - regFile16b2</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_25 - Sign_Extended</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_29 - alu</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_35 - reg3</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_49 - Sign_Extended_8bits</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SysTest.v/UUT - DataPath/XLXI_51 - Sign_Extended_3bits</ClosedNode>
+         <ClosedNode>/DataPath_DataPath_sch_tb D:|Datapath|DataPath|SystemTest.v</ClosedNode>
+         <ClosedNode>/TestMem D:|Datapath|DataPath|TestMem.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>DataPath_DataPath_sch_tb (D:/Datapath/DataPath/SysTest.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b20000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>DataPath_DataPath_sch_tb (D:/Datapath/DataPath/SysTest.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

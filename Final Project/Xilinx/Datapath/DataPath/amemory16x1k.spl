@@ -1,0 +1,11 @@
+[Inputs]
+Write
+CLK
+=DataIn[15:0]=
+=Address[9:0]=
+[Outputs]
+=DataOut[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel amemory16x1k
+

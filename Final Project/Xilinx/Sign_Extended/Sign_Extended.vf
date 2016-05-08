@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sign_Extended.vf
+// /___/   /\     Timestamp : 10/29/2014 23:28:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/components/Sign_Extended/Sign_Extended.vf -w D:/components/Sign_Extended/Sign_Extended.sch
+//Design Name: Sign_Extended
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Sign_Extended(Input, 
+                     Output);
+
+    input [10:0] Input;
+   output [15:0] Output;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_17;
+   wire [15:0] XLXN_18;
+   
+   VCC  XLXI_1 (.P(V));
+   GND  XLXI_2 (.G(G));
+   buf16  XLXI_5 (.I({G, G, G, G, G, Input[10:0]}), 
+                 .O(XLXN_17[15:0]));
+   buf16  XLXI_7 (.I({V, V, V, V, V, Input[10:0]}), 
+                 .O(XLXN_18[15:0]));
+   mux16b2  XLXI_9 (.A(XLXN_17[15:0]), 
+                   .B(XLXN_18[15:0]), 
+                   .S(Input[10]), 
+                   .O(Output[15:0]));
+endmodule

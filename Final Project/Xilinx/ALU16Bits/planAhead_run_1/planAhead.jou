@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 12:49:33 MST 2011
+# Start of session at: Mon Mar 31 16:46:59 2014
+# Process ID: 6938
+# Log file: /home/zxqdx/csse132/lab04/alu/planAhead_run_1/planAhead.log
+# Journal file: /home/zxqdx/csse132/lab04/alu/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/zxqdx/csse132/lab04/alu/pa.fromHdl.tcl
+set_property loc "" [get_ports [list  {a[0]}]]
+exit
+stop_gui

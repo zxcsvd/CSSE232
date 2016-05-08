@@ -1,0 +1,98 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Datapath/DataPath/DataPath_DataPath_sch_tb_isim_beh.exe -prj D:/Datapath/DataPath/DataPath_DataPath_sch_tb_beh.prj work.DataPath_DataPath_sch_tb work.glbl 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Datapath/DataPath/add1b.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/SLT.v" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/mux16b2.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/fd8ce.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/fd3ce.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/fd11ce.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/decode1b2.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/alu1b.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/buf16.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/mux16b8.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/Zero_Extended.v" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/Sign_Extended_8bits.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/Sign_Extended_3bits.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/Sign_Extended.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/ShiftLeftBy8.v" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/regFile16b2.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/reg8.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/reg3.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/reg16.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/reg11.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/mux4b16.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/control_unit.v" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/Block_Mem_16bits.v" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/alu.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/DataPath.vf" into library work
+Analyzing Verilog file "D:/Datapath/DataPath/SysTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Datapath/DataPath/DataPath.vf" Line 890: Port A is not connected to this instance
+Completed static elaboration
+Compiling module AND2
+Compiling module INV
+Compiling module OR2
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_DataPath
+Compiling module GND
+Compiling module reg16_MUSER_DataPath
+Compiling module VCC
+Compiling module AND3
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_DataPath
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_DataPath
+Compiling module mux4b16_MUSER_DataPath
+Compiling module fd11ce_MUSER_DataPath
+Compiling module reg11_MUSER_DataPath
+Compiling module FD8CE_MXILINX_DataPath
+Compiling module reg8_MUSER_DataPath
+Compiling module ShiftLeftBy8
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_regFile16b2
+Compiling module decode1b2
+Compiling module M2_1E_MXILINX_regFile16b2
+Compiling module mux16b2_MUSER_regFile16b2
+Compiling module regFile16b2
+Compiling module M2_1E_MXILINX_mux16b8
+Compiling module MUXF5_L
+Compiling module MUXF6
+Compiling module M8_1E_MXILINX_mux16b8
+Compiling module mux16b8
+Compiling module Zero_Extended
+Compiling module BUF
+Compiling module buf16
+Compiling module mux16b2_MUSER_DataPath
+Compiling module Sign_Extended_MUSER_DataPath
+Compiling module OR4
+Compiling module AND3B2
+Compiling module OR3
+Compiling module add1b_MUSER_alu
+Compiling module M2_1E_MXILINX_alu
+Compiling module M4_1E_MXILINX_alu
+Compiling module AND2B1
+Compiling module alu1b_MUSER_alu
+Compiling module AND4B4
+Compiling module XOR2
+Compiling module AND4
+Compiling module SLT
+Compiling module alu
+Compiling module fd3ce_MUSER_DataPath
+Compiling module reg3_MUSER_DataPath
+Compiling module Sign_Extended_8bits_MUSER_DataPa...
+Compiling module Sign_Extended_3bits_MUSER_DataPa...
+Compiling module MIPS_control_unit
+Compiling module amemory16x1k
+Compiling module DataPath
+Compiling module DataPath_DataPath_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 42 sub-compilation(s) to finish...
+Compiled 57 Verilog Units
+Built simulation executable D:/Datapath/DataPath/DataPath_DataPath_sch_tb_isim_beh.exe
+Fuse Memory Usage: 31296 KB
+Fuse CPU Usage: 499 ms

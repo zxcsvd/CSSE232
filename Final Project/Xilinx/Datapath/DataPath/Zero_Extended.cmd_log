@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/components/Zero_Extended/Zero_Extended.v -lang verilog -prj DataPath -o Zero_Extended.spl -module Zero_Extended -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Zero_Extended.spl D:/Datapath/DataPath/Zero_Extended.sym 

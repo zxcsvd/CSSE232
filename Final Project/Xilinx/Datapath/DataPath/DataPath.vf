@@ -1,0 +1,993 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DataPath.vf
+// /___/   /\     Timestamp : 11/13/2014 15:20:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Datapath/DataPath/DataPath.vf -w D:/Datapath/DataPath/DataPath.sch
+//Design Name: DataPath
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_DataPath(D0, 
+                              D1, 
+                              E, 
+                              S0, 
+                              O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module mux16b2_MUSER_DataPath(A, 
+                              B, 
+                              S, 
+                              O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input S;
+   output [15:0] O;
+   
+   wire v;
+   
+   VCC  XLXI_1 (.P(v));
+   (* HU_SET = "XLXI_4_0" *) 
+   M2_1E_MXILINX_DataPath  XLXI_4 (.D0(A[0]), 
+                                  .D1(B[0]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[0]));
+   (* HU_SET = "XLXI_5_1" *) 
+   M2_1E_MXILINX_DataPath  XLXI_5 (.D0(A[1]), 
+                                  .D1(B[1]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[1]));
+   (* HU_SET = "XLXI_6_2" *) 
+   M2_1E_MXILINX_DataPath  XLXI_6 (.D0(A[2]), 
+                                  .D1(B[2]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[2]));
+   (* HU_SET = "XLXI_7_3" *) 
+   M2_1E_MXILINX_DataPath  XLXI_7 (.D0(A[3]), 
+                                  .D1(B[3]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[3]));
+   (* HU_SET = "XLXI_8_4" *) 
+   M2_1E_MXILINX_DataPath  XLXI_8 (.D0(A[4]), 
+                                  .D1(B[4]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[4]));
+   (* HU_SET = "XLXI_9_5" *) 
+   M2_1E_MXILINX_DataPath  XLXI_9 (.D0(A[5]), 
+                                  .D1(B[5]), 
+                                  .E(v), 
+                                  .S0(S), 
+                                  .O(O[5]));
+   (* HU_SET = "XLXI_10_6" *) 
+   M2_1E_MXILINX_DataPath  XLXI_10 (.D0(A[6]), 
+                                   .D1(B[6]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[6]));
+   (* HU_SET = "XLXI_11_7" *) 
+   M2_1E_MXILINX_DataPath  XLXI_11 (.D0(A[7]), 
+                                   .D1(B[7]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[7]));
+   (* HU_SET = "XLXI_12_8" *) 
+   M2_1E_MXILINX_DataPath  XLXI_12 (.D0(A[11]), 
+                                   .D1(B[11]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[11]));
+   (* HU_SET = "XLXI_13_9" *) 
+   M2_1E_MXILINX_DataPath  XLXI_13 (.D0(A[10]), 
+                                   .D1(B[10]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[10]));
+   (* HU_SET = "XLXI_14_10" *) 
+   M2_1E_MXILINX_DataPath  XLXI_14 (.D0(A[9]), 
+                                   .D1(B[9]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[9]));
+   (* HU_SET = "XLXI_15_11" *) 
+   M2_1E_MXILINX_DataPath  XLXI_15 (.D0(A[8]), 
+                                   .D1(B[8]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[8]));
+   (* HU_SET = "XLXI_16_12" *) 
+   M2_1E_MXILINX_DataPath  XLXI_16 (.D0(A[12]), 
+                                   .D1(B[12]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[12]));
+   (* HU_SET = "XLXI_17_13" *) 
+   M2_1E_MXILINX_DataPath  XLXI_17 (.D0(A[13]), 
+                                   .D1(B[13]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[13]));
+   (* HU_SET = "XLXI_18_14" *) 
+   M2_1E_MXILINX_DataPath  XLXI_18 (.D0(A[14]), 
+                                   .D1(B[14]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[14]));
+   (* HU_SET = "XLXI_19_15" *) 
+   M2_1E_MXILINX_DataPath  XLXI_19 (.D0(A[15]), 
+                                   .D1(B[15]), 
+                                   .E(v), 
+                                   .S0(S), 
+                                   .O(O[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module Sign_Extended_3bits_MUSER_DataPath(Input, 
+                                          Output);
+
+    input [2:0] Input;
+   output [15:0] Output;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_14;
+   wire [15:0] XLXN_15;
+   
+   VCC  XLXI_1 (.P(V));
+   GND  XLXI_2 (.G(G));
+   buf16  XLXI_12 (.I({G, G, G, G, G, G, G, G, G, G, G, G, G, Input[2:0]}), 
+                  .O(XLXN_14[15:0]));
+   buf16  XLXI_13 (.I({V, V, V, V, V, V, V, V, V, V, V, V, V, Input[2:0]}), 
+                  .O(XLXN_15[15:0]));
+   mux16b2_MUSER_DataPath  XLXI_14 (.A(XLXN_14[15:0]), 
+                                   .B(XLXN_15[15:0]), 
+                                   .S(Input[2]), 
+                                   .O(Output[15:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Sign_Extended_8bits_MUSER_DataPath(Input, 
+                                          Output);
+
+    input [7:0] Input;
+   output [15:0] Output;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_14;
+   wire [15:0] XLXN_15;
+   
+   VCC  XLXI_1 (.P(V));
+   GND  XLXI_2 (.G(G));
+   buf16  XLXI_12 (.I({G, G, G, G, G, G, G, G, Input[7:0]}), 
+                  .O(XLXN_14[15:0]));
+   buf16  XLXI_13 (.I({V, V, V, V, V, V, V, V, Input[7:0]}), 
+                  .O(XLXN_15[15:0]));
+   mux16b2_MUSER_DataPath  XLXI_14 (.A(XLXN_14[15:0]), 
+                                   .B(XLXN_15[15:0]), 
+                                   .S(Input[7]), 
+                                   .O(Output[15:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_DataPath(D0, 
+                              D1, 
+                              D2, 
+                              D3, 
+                              E, 
+                              S0, 
+                              S1, 
+                              O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_17" *) 
+   M2_1E_MXILINX_DataPath  I_M01 (.D0(D0), 
+                                 .D1(D1), 
+                                 .E(E), 
+                                 .S0(S0), 
+                                 .O(M01));
+   (* HU_SET = "I_M23_16" *) 
+   M2_1E_MXILINX_DataPath  I_M23 (.D0(D2), 
+                                 .D1(D3), 
+                                 .E(E), 
+                                 .S0(S0), 
+                                 .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module mux4b16_MUSER_DataPath(A, 
+                              B, 
+                              C, 
+                              D, 
+                              S, 
+                              O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [15:0] D;
+    input [1:0] S;
+   output [15:0] O;
+   
+   wire v;
+   
+   VCC  XLXI_86 (.P(v));
+   (* HU_SET = "XLXI_87_18" *) 
+   M4_1E_MXILINX_DataPath  XLXI_87 (.D0(A[0]), 
+                                   .D1(B[0]), 
+                                   .D2(C[0]), 
+                                   .D3(D[0]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[0]));
+   (* HU_SET = "XLXI_88_19" *) 
+   M4_1E_MXILINX_DataPath  XLXI_88 (.D0(A[1]), 
+                                   .D1(B[1]), 
+                                   .D2(C[1]), 
+                                   .D3(D[1]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[1]));
+   (* HU_SET = "XLXI_89_20" *) 
+   M4_1E_MXILINX_DataPath  XLXI_89 (.D0(A[2]), 
+                                   .D1(B[2]), 
+                                   .D2(C[2]), 
+                                   .D3(D[2]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[2]));
+   (* HU_SET = "XLXI_90_21" *) 
+   M4_1E_MXILINX_DataPath  XLXI_90 (.D0(A[3]), 
+                                   .D1(B[3]), 
+                                   .D2(C[3]), 
+                                   .D3(D[3]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[3]));
+   (* HU_SET = "XLXI_91_22" *) 
+   M4_1E_MXILINX_DataPath  XLXI_91 (.D0(A[4]), 
+                                   .D1(B[4]), 
+                                   .D2(C[4]), 
+                                   .D3(D[4]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[4]));
+   (* HU_SET = "XLXI_92_23" *) 
+   M4_1E_MXILINX_DataPath  XLXI_92 (.D0(A[5]), 
+                                   .D1(B[5]), 
+                                   .D2(C[5]), 
+                                   .D3(D[5]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[5]));
+   (* HU_SET = "XLXI_93_24" *) 
+   M4_1E_MXILINX_DataPath  XLXI_93 (.D0(A[6]), 
+                                   .D1(B[6]), 
+                                   .D2(C[6]), 
+                                   .D3(D[6]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[6]));
+   (* HU_SET = "XLXI_94_25" *) 
+   M4_1E_MXILINX_DataPath  XLXI_94 (.D0(A[7]), 
+                                   .D1(B[7]), 
+                                   .D2(C[7]), 
+                                   .D3(D[7]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[7]));
+   (* HU_SET = "XLXI_95_26" *) 
+   M4_1E_MXILINX_DataPath  XLXI_95 (.D0(A[8]), 
+                                   .D1(B[8]), 
+                                   .D2(C[8]), 
+                                   .D3(D[8]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[8]));
+   (* HU_SET = "XLXI_96_27" *) 
+   M4_1E_MXILINX_DataPath  XLXI_96 (.D0(A[9]), 
+                                   .D1(B[9]), 
+                                   .D2(C[9]), 
+                                   .D3(D[9]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[9]));
+   (* HU_SET = "XLXI_97_28" *) 
+   M4_1E_MXILINX_DataPath  XLXI_97 (.D0(A[10]), 
+                                   .D1(B[10]), 
+                                   .D2(C[10]), 
+                                   .D3(D[10]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[10]));
+   (* HU_SET = "XLXI_98_29" *) 
+   M4_1E_MXILINX_DataPath  XLXI_98 (.D0(A[11]), 
+                                   .D1(B[11]), 
+                                   .D2(C[11]), 
+                                   .D3(D[11]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[11]));
+   (* HU_SET = "XLXI_99_30" *) 
+   M4_1E_MXILINX_DataPath  XLXI_99 (.D0(A[12]), 
+                                   .D1(B[12]), 
+                                   .D2(C[12]), 
+                                   .D3(D[12]), 
+                                   .E(v), 
+                                   .S0(S[0]), 
+                                   .S1(S[1]), 
+                                   .O(O[12]));
+   (* HU_SET = "XLXI_100_31" *) 
+   M4_1E_MXILINX_DataPath  XLXI_100 (.D0(A[13]), 
+                                    .D1(B[13]), 
+                                    .D2(C[13]), 
+                                    .D3(D[13]), 
+                                    .E(v), 
+                                    .S0(S[0]), 
+                                    .S1(S[1]), 
+                                    .O(O[13]));
+   (* HU_SET = "XLXI_101_32" *) 
+   M4_1E_MXILINX_DataPath  XLXI_101 (.D0(A[14]), 
+                                    .D1(B[14]), 
+                                    .D2(C[14]), 
+                                    .D3(D[14]), 
+                                    .E(v), 
+                                    .S0(S[0]), 
+                                    .S1(S[1]), 
+                                    .O(O[14]));
+   (* HU_SET = "XLXI_102_33" *) 
+   M4_1E_MXILINX_DataPath  XLXI_102 (.D0(A[15]), 
+                                    .D1(B[15]), 
+                                    .D2(C[15]), 
+                                    .D3(D[15]), 
+                                    .E(v), 
+                                    .S0(S[0]), 
+                                    .S1(S[1]), 
+                                    .O(O[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module fd3ce_MUSER_DataPath(C, 
+                            CE, 
+                            CLR, 
+                            D, 
+                            Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [2:0] D;
+   output [2:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[2]), 
+               .Q(Q[2]));
+endmodule
+`timescale 1ns / 1ps
+
+module reg3_MUSER_DataPath(CLK, 
+                           I, 
+                           Write, 
+                           O);
+
+    input CLK;
+    input [2:0] I;
+    input Write;
+   output [2:0] O;
+   
+   wire XLXN_1;
+   
+   GND  XLXI_3 (.G(XLXN_1));
+   fd3ce_MUSER_DataPath  XLXI_13 (.C(CLK), 
+                                 .CE(Write), 
+                                 .CLR(XLXN_1), 
+                                 .D(I[2:0]), 
+                                 .Q(O[2:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module FD16CE_MXILINX_DataPath(C, 
+                               CE, 
+                               CLR, 
+                               D, 
+                               Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [15:0] D;
+   output [15:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FDCE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FDCE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[5]), 
+              .Q(Q[5]));
+   FDCE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[6]), 
+              .Q(Q[6]));
+   FDCE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[7]), 
+              .Q(Q[7]));
+   FDCE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[8]), 
+              .Q(Q[8]));
+   FDCE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[9]), 
+              .Q(Q[9]));
+   FDCE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[10]), 
+               .Q(Q[10]));
+   FDCE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[11]), 
+               .Q(Q[11]));
+   FDCE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[12]), 
+               .Q(Q[12]));
+   FDCE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[13]), 
+               .Q(Q[13]));
+   FDCE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[14]), 
+               .Q(Q[14]));
+   FDCE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[15]), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module reg16_MUSER_DataPath(CLK, 
+                            I, 
+                            Write, 
+                            O);
+
+    input CLK;
+    input [15:0] I;
+    input Write;
+   output [15:0] O;
+   
+   wire XLXN_1;
+   
+   (* HU_SET = "XLXI_2_34" *) 
+   FD16CE_MXILINX_DataPath  XLXI_2 (.C(CLK), 
+                                   .CE(Write), 
+                                   .CLR(XLXN_1), 
+                                   .D(I[15:0]), 
+                                   .Q(O[15:0]));
+   GND  XLXI_3 (.G(XLXN_1));
+endmodule
+`timescale 1ns / 1ps
+
+module Sign_Extended_MUSER_DataPath(Input, 
+                                    Output);
+
+    input [10:0] Input;
+   output [15:0] Output;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_17;
+   wire [15:0] XLXN_18;
+   
+   VCC  XLXI_1 (.P(V));
+   GND  XLXI_2 (.G(G));
+   buf16  XLXI_5 (.I({G, G, G, G, G, Input[10:0]}), 
+                 .O(XLXN_17[15:0]));
+   buf16  XLXI_7 (.I({V, V, V, V, V, Input[10:0]}), 
+                 .O(XLXN_18[15:0]));
+   mux16b2_MUSER_DataPath  XLXI_9 (.A(XLXN_17[15:0]), 
+                                  .B(XLXN_18[15:0]), 
+                                  .S(Input[10]), 
+                                  .O());
+endmodule
+`timescale 1ns / 1ps
+
+module FD8CE_MXILINX_DataPath(C, 
+                              CE, 
+                              CLR, 
+                              D, 
+                              Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [7:0] D;
+   output [7:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FDCE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FDCE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[5]), 
+              .Q(Q[5]));
+   FDCE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[6]), 
+              .Q(Q[6]));
+   FDCE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[7]), 
+              .Q(Q[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module reg8_MUSER_DataPath(CLK, 
+                           I, 
+                           Write, 
+                           O);
+
+    input CLK;
+    input [7:0] I;
+    input Write;
+   output [7:0] O;
+   
+   wire XLXN_1;
+   
+   GND  XLXI_3 (.G(XLXN_1));
+   (* HU_SET = "XLXI_4_35" *) 
+   FD8CE_MXILINX_DataPath  XLXI_4 (.C(CLK), 
+                                  .CE(Write), 
+                                  .CLR(XLXN_1), 
+                                  .D(I[7:0]), 
+                                  .Q(O[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module fd11ce_MUSER_DataPath(C, 
+                             CE, 
+                             CLR, 
+                             D, 
+                             Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [10:0] D;
+   output [10:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FDCE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FDCE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FDCE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[5]), 
+               .Q(Q[5]));
+   FDCE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[6]), 
+               .Q(Q[6]));
+   FDCE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[7]), 
+               .Q(Q[7]));
+   FDCE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[8]), 
+               .Q(Q[8]));
+   FDCE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[9]), 
+               .Q(Q[9]));
+   FDCE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .CLR(CLR), 
+               .D(D[10]), 
+               .Q(Q[10]));
+endmodule
+`timescale 1ns / 1ps
+
+module reg11_MUSER_DataPath(CLK, 
+                            I, 
+                            Write, 
+                            O);
+
+    input CLK;
+    input [10:0] I;
+    input Write;
+   output [10:0] O;
+   
+   wire XLXN_1;
+   
+   GND  XLXI_3 (.G(XLXN_1));
+   fd11ce_MUSER_DataPath  XLXI_7 (.C(CLK), 
+                                 .CE(Write), 
+                                 .CLR(XLXN_1), 
+                                 .D(I[10:0]), 
+                                 .Q(O[10:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module DataPath(CLK, 
+                ResetH, 
+                CS, 
+                IR, 
+                NS, 
+                PC);
+
+    input CLK;
+    input ResetH;
+   output [4:0] CS;
+   output [15:0] IR;
+   output [4:0] NS;
+   output [15:0] PC;
+   
+   wire [15:0] AddressOut;
+   wire [2:0] ALUOp;
+   wire [1:0] ALUoutSrc;
+   wire [1:0] ALUSrc1;
+   wire [1:0] ALUSrc2;
+   wire Beq;
+   wire Bne;
+   wire DataSrc;
+   wire G;
+   wire [2:0] IorD;
+   wire IRWrite;
+   wire MDRWrite;
+   wire MemWrite;
+   wire [7:0] O;
+   wire [1:0] PCSource;
+   wire PCWrite;
+   wire [2:0] RegSrc;
+   wire RegWrite;
+   wire V;
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_11;
+   wire [15:0] XLXN_15;
+   wire [15:0] XLXN_36;
+   wire [15:0] XLXN_37;
+   wire [15:0] XLXN_76;
+   wire [15:0] XLXN_79;
+   wire [10:0] XLXN_81;
+   wire [15:0] XLXN_84;
+   wire [15:0] XLXN_85;
+   wire [15:0] XLXN_89;
+   wire [15:0] XLXN_94;
+   wire [15:0] XLXN_95;
+   wire XLXN_99;
+   wire [15:0] XLXN_101;
+   wire [15:0] XLXN_102;
+   wire [15:0] XLXN_109;
+   wire [15:0] XLXN_146;
+   wire [15:0] XLXN_159;
+   wire [15:0] XLXN_168;
+   wire [2:0] XLXN_173;
+   wire [15:0] XLXN_174;
+   wire XLXN_189;
+   wire XLXN_191;
+   wire [15:0] IR_DUMMY;
+   wire [15:0] PC_DUMMY;
+   
+   assign IR[15:0] = IR_DUMMY[15:0];
+   assign PC[15:0] = PC_DUMMY[15:0];
+   AND2  XLXI_2 (.I0(XLXN_99), 
+                .I1(Beq), 
+                .O(XLXN_5));
+   INV  XLXI_3 (.I(XLXN_99), 
+               .O(XLXN_3));
+   AND2  XLXI_4 (.I0(Bne), 
+                .I1(XLXN_3), 
+                .O(XLXN_6));
+   OR2  XLXI_5 (.I0(XLXN_6), 
+               .I1(XLXN_5), 
+               .O(XLXN_9));
+   OR2  XLXI_6 (.I0(PCWrite), 
+               .I1(XLXN_9), 
+               .O(XLXN_11));
+   reg16_MUSER_DataPath  XLXI_7 (.CLK(CLK), 
+                                .I(XLXN_15[15:0]), 
+                                .Write(XLXN_11), 
+                                .O(PC_DUMMY[15:0]));
+   mux4b16_MUSER_DataPath  XLXI_8 (.A(XLXN_37[15:0]), 
+                                  .B(XLXN_36[15:0]), 
+                                  .C({G, G, G, G, G, IR_DUMMY[11:1]}), 
+                                  .D({G, G, G, G, G, G, G, V, G, G, G, G, G, G, 
+         G, G}), 
+                                  .S(PCSource[1:0]), 
+                                  .O(XLXN_15[15:0]));
+   GND  XLXI_10 (.G(G));
+   reg16_MUSER_DataPath  XLXI_12 (.CLK(CLK), 
+                                 .I(XLXN_168[15:0]), 
+                                 .Write(IRWrite), 
+                                 .O(IR_DUMMY[15:0]));
+   reg16_MUSER_DataPath  XLXI_13 (.CLK(CLK), 
+                                 .I(XLXN_168[15:0]), 
+                                 .Write(MDRWrite), 
+                                 .O(XLXN_89[15:0]));
+   reg11_MUSER_DataPath  XLXI_14 (.CLK(CLK), 
+                                 .I(IR_DUMMY[11:1]), 
+                                 .Write(V), 
+                                 .O(XLXN_81[10:0]));
+   reg8_MUSER_DataPath  XLXI_16 (.CLK(CLK), 
+                                .I(IR_DUMMY[8:1]), 
+                                .Write(V), 
+                                .O(O[7:0]));
+   VCC  XLXI_19 (.P(V));
+   ShiftLeftBy8  XLXI_20 (.DI(O[7:0]), 
+                         .SO(XLXN_109[15:0]));
+   regFile16b2  XLXI_21 (.CLK(CLK), 
+                        .Reg(IR_DUMMY[0]), 
+                        .Write(RegWrite), 
+                        .WriteBack(XLXN_76[15:0]), 
+                        .DataOut(XLXN_79[15:0]));
+   reg16_MUSER_DataPath  XLXI_22 (.CLK(CLK), 
+                                 .I(XLXN_79[15:0]), 
+                                 .Write(V), 
+                                 .O(XLXN_37[15:0]));
+   mux16b8  XLXI_23 (.A(XLXN_85[15:0]), 
+                    .B(XLXN_89[15:0]), 
+                    .C(XLXN_109[15:0]), 
+                    .D(PC_DUMMY[15:0]), 
+                    .E(XLXN_36[15:0]), 
+                    .F({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .G({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .H({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .S(RegSrc[2:0]), 
+                    .O(XLXN_76[15:0]));
+   Zero_Extended  XLXI_24 (.DI(XLXN_81[10:0]), 
+                          .SO(XLXN_84[15:0]));
+   Sign_Extended_MUSER_DataPath  XLXI_25 (.Input(XLXN_81[10:0]), 
+                                         .Output(XLXN_85[15:0]));
+   alu  XLXI_29 (.a(XLXN_94[15:0]), 
+                .b(XLXN_95[15:0]), 
+                .op(ALUOp[2:0]), 
+                .co(), 
+                .overflow(XLXN_189), 
+                .Result(XLXN_101[15:0]), 
+                .zero(XLXN_99));
+   mux4b16_MUSER_DataPath  XLXI_31 (.A(XLXN_85[15:0]), 
+                                   .B(XLXN_174[15:0]), 
+                                   .C(PC_DUMMY[15:0]), 
+                                   .D(XLXN_89[15:0]), 
+                                   .S(ALUSrc1[1:0]), 
+                                   .O(XLXN_94[15:0]));
+   mux4b16_MUSER_DataPath  XLXI_33 (.A({G, G, G, G, G, IR_DUMMY[11:1]}), 
+                                   .B(XLXN_101[15:0]), 
+                                   .C(XLXN_85[15:0]), 
+                                   .D(XLXN_84[15:0]), 
+                                   .S(ALUoutSrc[1:0]), 
+                                   .O(XLXN_102[15:0]));
+   reg16_MUSER_DataPath  XLXI_34 (.CLK(CLK), 
+                                 .I(XLXN_102[15:0]), 
+                                 .Write(V), 
+                                 .O(XLXN_36[15:0]));
+   reg3_MUSER_DataPath  XLXI_35 (.CLK(CLK), 
+                                .I(IR_DUMMY[11:9]), 
+                                .Write(V), 
+                                .O(XLXN_173[2:0]));
+   mux16b2_MUSER_DataPath  XLXI_37 (.A(XLXN_37[15:0]), 
+                                   .B(XLXN_36[15:0]), 
+                                   .S(DataSrc), 
+                                   .O(XLXN_146[15:0]));
+   mux16b8  XLXI_41 (.A(PC_DUMMY[15:0]), 
+                    .B(XLXN_36[15:0]), 
+                    .C(XLXN_37[15:0]), 
+                    .D({G, G, G, G, G, G, V, V, G, G, G, G, G, G, G, G}), 
+                    .E(XLXN_89[15:0]), 
+                    .F({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .G({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .H({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                    .S(IorD[2:0]), 
+                    .O(AddressOut[15:0]));
+   mux4b16_MUSER_DataPath  XLXI_42 (.A(XLXN_37[15:0]), 
+                                   .B({G, G, G, G, G, G, G, G, G, G, G, G, G, 
+         G, G, V}), 
+                                   .C(PC_DUMMY[15:0]), 
+                                   .D(XLXN_159[15:0]), 
+                                   .S(ALUSrc2[1:0]), 
+                                   .O(XLXN_95[15:0]));
+   Sign_Extended_8bits_MUSER_DataPath  XLXI_49 (.Input(O[7:0]), 
+                                               .Output(XLXN_159[15:0]));
+   Sign_Extended_3bits_MUSER_DataPath  XLXI_51 (.Input(XLXN_173[2:0]), 
+                                               .Output(XLXN_174[15:0]));
+   MIPS_control_unit  XLXI_52 (.CLK(CLK), 
+                              .Opcode(IR_DUMMY[15:12]), 
+                              .Reset(XLXN_191), 
+                              .ALUOp(ALUOp[2:0]), 
+                              .ALUoutSrc(ALUoutSrc[1:0]), 
+                              .ALUSrc1(ALUSrc1[1:0]), 
+                              .ALUSrc2(ALUSrc2[1:0]), 
+                              .Beq(Beq), 
+                              .Bne(Bne), 
+                              .current_state(CS[4:0]), 
+                              .DataSrc(DataSrc), 
+                              .IorD(IorD[2:0]), 
+                              .IRWrite(IRWrite), 
+                              .MDRWrite(MDRWrite), 
+                              .MemWrite(MemWrite), 
+                              .next_state(NS[4:0]), 
+                              .PCSource(PCSource[1:0]), 
+                              .PCWrite(PCWrite), 
+                              .RegSrc(RegSrc[2:0]), 
+                              .RegWrite(RegWrite));
+   amemory16x1k  XLXI_53 (.Address(AddressOut[9:0]), 
+                         .CLK(CLK), 
+                         .DataIn(XLXN_146[15:0]), 
+                         .Write(MemWrite), 
+                         .DataOut(XLXN_168[15:0]));
+   OR2  XLXI_55 (.I0(ResetH), 
+                .I1(XLXN_189), 
+                .O(XLXN_191));
+endmodule

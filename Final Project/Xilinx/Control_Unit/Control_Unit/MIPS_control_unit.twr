@@ -1,0 +1,203 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MIPS_control_unit.twx MIPS_control_unit.ncd -o
+MIPS_control_unit.twr MIPS_control_unit.pcf
+
+Design file:              MIPS_control_unit.ncd
+Physical constraint file: MIPS_control_unit.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLK to Pad
+----------------+------------+------------------+--------+
+                | clk (edge) |                  | Clock  |
+Destination     |   to PAD   |Internal Clock(s) | Phase  |
+----------------+------------+------------------+--------+
+Beq             |   10.347(R)|CLK_BUFGP         |   0.000|
+IRWrite         |   10.700(R)|CLK_BUFGP         |   0.000|
+MemRead         |   10.039(R)|CLK_BUFGP         |   0.000|
+MemWrite        |   11.188(R)|CLK_BUFGP         |   0.000|
+PCWrite         |   10.840(R)|CLK_BUFGP         |   0.000|
+RegWrite        |   13.668(R)|CLK_BUFGP         |   0.000|
+current_state<0>|    9.557(R)|CLK_BUFGP         |   0.000|
+current_state<1>|    8.647(R)|CLK_BUFGP         |   0.000|
+current_state<2>|   10.012(R)|CLK_BUFGP         |   0.000|
+current_state<3>|    9.562(R)|CLK_BUFGP         |   0.000|
+current_state<4>|    9.398(R)|CLK_BUFGP         |   0.000|
+next_state<0>   |   12.856(R)|CLK_BUFGP         |   0.000|
+next_state<1>   |   12.759(R)|CLK_BUFGP         |   0.000|
+next_state<2>   |   12.133(R)|CLK_BUFGP         |   0.000|
+next_state<3>   |   12.737(R)|CLK_BUFGP         |   0.000|
+next_state<4>   |   11.451(R)|CLK_BUFGP         |   0.000|
+----------------+------------+------------------+--------+
+
+Clock Opcode<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ALUOp<0>    |    9.205(F)|ALUOp_not0001     |   0.000|
+ALUOp<1>    |    9.726(F)|ALUOp_not0001     |   0.000|
+ALUOp<2>    |    9.478(F)|ALUOp_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock Opcode<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ALUOp<0>    |    8.900(F)|ALUOp_not0001     |   0.000|
+ALUOp<1>    |    9.421(F)|ALUOp_not0001     |   0.000|
+ALUOp<2>    |    9.173(F)|ALUOp_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock Opcode<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ALUOp<0>    |    8.950(F)|ALUOp_not0001     |   0.000|
+ALUOp<1>    |    9.471(F)|ALUOp_not0001     |   0.000|
+ALUOp<2>    |    9.223(F)|ALUOp_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock Opcode<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ALUOp<0>    |    9.004(F)|ALUOp_not0001     |   0.000|
+ALUOp<1>    |    9.525(F)|ALUOp_not0001     |   0.000|
+ALUOp<2>    |    9.277(F)|ALUOp_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    6.351|         |         |         |
+Opcode<0>      |    6.272|    6.272|         |         |
+Opcode<1>      |    5.502|    5.502|         |         |
+Opcode<2>      |    6.497|    6.497|         |         |
+Opcode<3>      |    6.447|    6.447|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Opcode<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    5.969|         |
+Opcode<0>      |         |         |    2.217|    2.217|
+Opcode<1>      |         |         |    1.780|    1.780|
+Opcode<2>      |         |         |    2.098|    2.098|
+Opcode<3>      |         |         |    1.817|    1.817|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Opcode<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    5.969|         |
+Opcode<0>      |         |         |    3.032|    3.032|
+Opcode<1>      |         |         |    2.595|    2.595|
+Opcode<2>      |         |         |    2.913|    2.913|
+Opcode<3>      |         |         |    2.632|    2.632|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Opcode<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    5.969|         |
+Opcode<0>      |         |         |    2.792|    2.792|
+Opcode<1>      |         |         |    2.355|    2.355|
+Opcode<2>      |         |         |    2.673|    2.673|
+Opcode<3>      |         |         |    2.392|    2.392|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Opcode<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    5.969|         |
+Opcode<0>      |         |         |    2.176|    2.176|
+Opcode<1>      |         |         |    1.739|    1.739|
+Opcode<2>      |         |         |    2.057|    2.057|
+Opcode<3>      |         |         |    1.776|    1.776|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Opcode<0>      |next_state<0>  |   12.186|
+Opcode<0>      |next_state<1>  |   12.089|
+Opcode<0>      |next_state<2>  |   11.494|
+Opcode<0>      |next_state<3>  |   11.927|
+Opcode<0>      |next_state<4>  |   10.812|
+Opcode<1>      |next_state<0>  |   11.416|
+Opcode<1>      |next_state<1>  |   11.319|
+Opcode<1>      |next_state<2>  |   10.616|
+Opcode<1>      |next_state<3>  |   10.018|
+Opcode<1>      |next_state<4>  |    9.430|
+Opcode<2>      |next_state<0>  |   12.411|
+Opcode<2>      |next_state<1>  |   12.314|
+Opcode<2>      |next_state<2>  |   11.719|
+Opcode<2>      |next_state<3>  |   12.152|
+Opcode<2>      |next_state<4>  |   11.037|
+Opcode<3>      |next_state<0>  |   12.361|
+Opcode<3>      |next_state<1>  |   12.264|
+Opcode<3>      |next_state<2>  |   11.669|
+Opcode<3>      |next_state<3>  |   12.102|
+Opcode<3>      |next_state<4>  |   10.987|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Nov 02 16:06:38 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 165 MB
+
+
+

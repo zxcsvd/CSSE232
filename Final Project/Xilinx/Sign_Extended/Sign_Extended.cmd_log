@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/components/Sign_Extended/Sign_Extended.xst" -ofn "D:/components/Sign_Extended/Sign_Extended.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sign_Extended.ngc Sign_Extended.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sign_Extended_map.ncd Sign_Extended.ngd Sign_Extended.pcf 
+par -w -intstyle ise -ol high -t 1 Sign_Extended_map.ncd Sign_Extended.ncd Sign_Extended.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sign_Extended.twx Sign_Extended.ncd -o Sign_Extended.twr Sign_Extended.pcf 

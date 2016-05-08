@@ -1,0 +1,22 @@
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lang verilog -prj DataPath -o D:/Datapath/DataPath/MIPS_control_unit.tfi -lib work D:/components/Control_Unit/Control_Unit//control_unit.v -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/components/Control_Unit/Control_Unit/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lib work D:/Datapath/DataPath/control_unit.v -lang verilog -prj DataPath -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl D:/Datapath/DataPath/MIPS_control_unit.sym 
+vhdtdtfi -lang verilog -prj DataPath -o D:/Datapath/DataPath/MIPS_control_unit.tfi -lib work D:/Datapath/DataPath//control_unit.v -module MIPS_control_unit -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

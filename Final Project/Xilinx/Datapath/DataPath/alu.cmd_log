@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym alu D:/components/ALU16Bits/alu.sch D:/Datapath/DataPath/alu.sym 

@@ -1,0 +1,30 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/components/Sign_Extended/Sign_Extended_Sign_Extended_sch_tb_isim_beh.exe -prj D:/components/Sign_Extended/Sign_Extended_Sign_Extended_sch_tb_beh.prj work.Sign_Extended_Sign_Extended_sch_tb work.glbl 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/components/Sign_Extended/buf16.vf" into library work
+Analyzing Verilog file "D:/components/Sign_Extended/mux16b2.vf" into library work
+Analyzing Verilog file "D:/components/Sign_Extended/Sign_Extended.vf" into library work
+Analyzing Verilog file "D:/components/Sign_Extended/Sign_EX_Test.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module VCC
+Compiling module GND
+Compiling module BUF
+Compiling module buf16
+Compiling module AND3
+Compiling module AND3B1
+Compiling module OR2
+Compiling module M2_1E_MXILINX_mux16b2
+Compiling module mux16b2
+Compiling module Sign_Extended
+Compiling module Sign_Extended_Sign_Extended_sch_...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable D:/components/Sign_Extended/Sign_Extended_Sign_Extended_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28572 KB
+Fuse CPU Usage: 311 ms

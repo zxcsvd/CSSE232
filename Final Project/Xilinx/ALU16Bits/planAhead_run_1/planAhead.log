@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 12:49:33 MST 2011
+# Start of session at: Mon Mar 31 16:46:59 2014
+# Process ID: 6938
+# Log file: /home/zxqdx/csse132/lab04/alu/planAhead_run_1/planAhead.log
+# Journal file: /home/zxqdx/csse132/lab04/alu/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Device-25] Loading parts and site information from /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/arch.xmlParsing RTL primitives file [/opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/zxqdx/csse132/lab04/alu/pa.fromHdl.tcl
+# create_project -name alu -dir "/home/zxqdx/csse132/lab04/alu/planAhead_run_1" -part xc3s500efg320-4
+Parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [/opt/Xilinx/13.4/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "alu.ucf" [current_fileset -constrset]
+Adding file '/home/zxqdx/csse132/lab04/alu/alu.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {add1b.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alu1b.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alu.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top alu $srcset
+# add_files [list {alu.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/zxqdx/csse132/lab04/alu/alu.vf" into library work
+INFO: [PlanAhead-430] Reading macro library /opt/Xilinx/13.4/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/13.4/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/13.4/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/13.4/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/13.4/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing-77] Reading timing library /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing-34] Done reading timing library /opt/Xilinx/13.4/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/zxqdx/csse132/lab04/alu/alu.ucf]
+Finished Parsing UCF File [/home/zxqdx/csse132/lab04/alu/alu.ucf]
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+No Unisim elements were transformed.open_rtl_design: Time (s): 10.130u 0.090s 8.820w. Memory (MB): 4478.348p 92.863g
+set_property loc "" [get_ports [list  {a[0]}]]
+set_property loc "" [get_ports [list  {a[0]}]]
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

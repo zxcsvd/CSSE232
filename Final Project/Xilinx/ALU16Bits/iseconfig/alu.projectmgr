@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="alu" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_44 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_45 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_46 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_47 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_48 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_49 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_50 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_51 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_52 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_53 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_54 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_55 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_6 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_7 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_8 - alu1b</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch/XLXI_9 - alu1b</ClosedNode>
+         <ClosedNode>/alu1b |home|jiangxingcheng|csse132|lab04|lab4|alu|alu1b.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000098000000020000000000000000000000000200000064ffffffff000000810000000300000002000000980000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>alu (D:/components/ALU16Bits/alu.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000212000000010000000100000000000000000000000064ffffffff000000810000000000000001000002120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Test_ALU.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000212000000040101000100000000000000000000000064ffffffff000000810000000000000004000000f00000000100000000000000290000000100000000000000840000000100000000000000750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Test_ALU.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>SLT.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000110000000010001000100000000000000000000000064ffffffff000000810000000000000001000001100000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>SLT.v</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000201000000010000000100000000000000000000000064ffffffff000000810000000000000001000002010000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TestMerge D:|components|ALU16Bits|TestMerge.v</ClosedNode>
+         <ClosedNode>/add1b_add1b_sch_tb D:|components|ALU16Bits|add1b_tb_0.v</ClosedNode>
+         <ClosedNode>/add1b_add1b_sch_tb |home|jiangxingcheng|csse132|lab04|lab4|alu|add1b_tb_0.v</ClosedNode>
+         <ClosedNode>/add1b_add1b_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|add1b_tb_0.v</ClosedNode>
+         <ClosedNode>/alu D:|components|ALU16Bits|alu.sch</ClosedNode>
+         <ClosedNode>/alu1b_alu1b_sch_tb D:|components|ALU16Bits|alu1b_tb_0.v</ClosedNode>
+         <ClosedNode>/alu1b_alu1b_sch_tb |home|jiangxingcheng|csse132|lab04|lab4|alu|alu1b_tb_0.v</ClosedNode>
+         <ClosedNode>/alu1b_alu1b_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|alu1b_tb_0.v/UUT - alu1b</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb - behavioral D:|components|ALU16Bits|TestALU.vhd</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb D:|components|ALU16Bits|ALU_16Bit_Test.v</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb D:|components|ALU16Bits|TestALU.v/UUT - alu</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb D:|components|ALU16Bits|Test_ALU.v/UUT - alu</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb D:|components|ALU16Bits|alu_tb_0.v</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|alu_tb_0.v/UUT - alu/XLXI_6 - alu1b</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|alu_tb_0.v/UUT - alu/XLXI_7 - alu1b</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|alu_tb_0.v/UUT - alu/XLXI_8 - alu1b</ClosedNode>
+         <ClosedNode>/alu_alu_sch_tb |home|lujia|Programming|CSSE132|1314c-csse132-zhangl|lab04|alu|alu_tb_0.v/UUT - alu/XLXI_9 - alu1b</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>alu_alu_sch_tb (D:/components/ALU16Bits/Test_ALU.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000116000000020000000000000000000000000200000064ffffffff000000810000000300000002000001160000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>alu_alu_sch_tb (D:/components/ALU16Bits/Test_ALU.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000212000000010000000100000000000000000000000064ffffffff000000810000000000000001000002120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000212000000010000000100000000000000000000000064ffffffff000000810000000000000001000002120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000201000000010000000100000000000000000000000064ffffffff000000810000000000000001000002010000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000212000000010000000100000000000000000000000064ffffffff000000810000000000000001000002120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

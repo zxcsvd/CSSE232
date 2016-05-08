@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Sign_Extended D:/components/Sign_Extended/Sign_Extended.sch D:/Datapath/DataPath/Sign_Extended.sym 

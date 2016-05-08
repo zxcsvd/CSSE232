@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : add1b.vf
+// /___/   /\     Timestamp : 11/05/2014 05:59:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Datapath/DataPath/add1b.vf -w D:/components/ALU16Bits/add1b.sch
+//Design Name: add1b
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module add1b(a, 
+             b, 
+             ci, 
+             co, 
+             r);
+
+    input a;
+    input b;
+    input ci;
+   output co;
+   output r;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   OR4  XLXI_1 (.I0(XLXN_6), 
+               .I1(XLXN_4), 
+               .I2(XLXN_3), 
+               .I3(XLXN_5), 
+               .O(r));
+   AND3B2  XLXI_2 (.I0(ci), 
+                  .I1(b), 
+                  .I2(a), 
+                  .O(XLXN_3));
+   AND3B2  XLXI_3 (.I0(ci), 
+                  .I1(a), 
+                  .I2(b), 
+                  .O(XLXN_4));
+   AND3  XLXI_4 (.I0(ci), 
+                .I1(b), 
+                .I2(a), 
+                .O(XLXN_6));
+   OR3  XLXI_5 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .O(co));
+   AND2  XLXI_10 (.I0(a), 
+                 .I1(ci), 
+                 .O(XLXN_13));
+   AND2  XLXI_11 (.I0(b), 
+                 .I1(ci), 
+                 .O(XLXN_14));
+   AND2  XLXI_12 (.I0(b), 
+                 .I1(a), 
+                 .O(XLXN_15));
+   AND3B2  XLXI_13 (.I0(b), 
+                   .I1(a), 
+                   .I2(ci), 
+                   .O(XLXN_5));
+endmodule
